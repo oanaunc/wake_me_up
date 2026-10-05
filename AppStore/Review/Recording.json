@@ -1,0 +1,35 @@
+{
+  "file": "WakeMeUp-Reviewer-Demo.mp4",
+  "durationSeconds": 49.5,
+  "sizeBytes": 2544049,
+  "codec": "H.264",
+  "resolution": [
+    660,
+    1434
+  ],
+  "audio": false,
+  "device": "iPhone 17 Pro Max simulator, iOS 26.5",
+  "recordedOn": "2026-10-05",
+  "captureTool": "xcrun simctl io recordVideo",
+  "segments": [
+    {
+      "sourceResult": "build/ReviewerTour.xcresult",
+      "test": "WakeUITests/testScreenshots",
+      "testResult": "passed",
+      "sourceStartSeconds": 3,
+      "sourceEndSeconds": 16,
+      "playbackSpeed": 0.6666666666666666
+    },
+    {
+      "sourceResult": "build/ReviewerAlarm.xcresult",
+      "test": "WakeUITests/testSystemAlarmOpensRitualFromBackground",
+      "testResult": "passed",
+      "sourceStartSeconds": 3,
+      "sourceEndSeconds": 33,
+      "playbackSpeed": 1,
+      "alarm": "isolated debug alarm scheduled after 15 seconds",
+      "tone": "simulator default system sound"
+    }
+  ],
+  "attachmentDestination": "App Store Connect / 6819282141 / iOS version 1.0 / App Review Information"
+}

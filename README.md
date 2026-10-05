@@ -33,9 +33,15 @@ Bundle: `com.oanarinaldi.wakemeup`. Team: `HBD3XXQK45`.
 - Native background alarm → Start moving → eight sun taps → saved sunrise passed on iOS 26.5 (`build/AlarmCertificate.xcresult`). Simulator App Intents requires an Apple Development certificate: ad-hoc signing has no team identifier and causes linkd to reject intent metadata. The integration test uses the default system sound because the 26.5 simulator's ToneLibrary crashes on custom CAF audio.
 - Final device archive succeeded. Version 1.0, build 1 uploaded successfully to App Store Connect, app ID 6819282141.
 - The physical-device custom ringtone, camera counting, motion sensing, locked-screen and terminated-app checks remain required. The connected iPhone was locked.
-- Version 1.0 build 1 is attached to the App Store version. Apple prepopulated the review contact fields when the version was saved; the user should verify those before the final submission. Apple’s Add for Review validation currently blocks on publication of the privacy responses. The final privacy publication agreement still requires the user’s confirmation. The subscription group's equivalent monthly/yearly products also need to be aligned to the same service level before release; the browser drag control did not persist that arrangement.
+- Version 1.0 build 1 is attached to the App Store version. Apple prepopulated the review contact fields when the version was saved; the user should verify those before the final submission. App Store Connect now shows version 1.0 as Ready for Review (added to the review draft); final submission was not performed in this session. A working-app video is attached to App Review Information and its explanation is saved in the reviewer notes. The subscription group's equivalent monthly/yearly products also need to be aligned to the same service level before release; the browser drag control did not persist that arrangement.
+
+The privacy, support, and terms pages use the existing website header, shared stylesheet, photo banner, content layout, footer, and scripts. The website styling update was deployed successfully.
 
 Public pages: [Privacy](https://oanarinaldi.com/wakemeupprivacy.html), [Support](https://oanarinaldi.com/wakemeupsupport.html), [Terms](https://oanarinaldi.com/wakemeupterms.html).
+
+### Reviewer video
+
+`AppStore/Review/WakeMeUp-Reviewer-Demo.mp4` is a 49.5-second silent H.264 simulator capture attached to App Store Connect. It shows alarm editing, guided push-up practice, a native background alarm opening Follow the sun, eight correct taps, and the saved journal. The tour is slowed to two-thirds speed; the native alarm segment runs at its recorded speed using the isolated 15-second debug test alarm and simulator default tone. It does not demonstrate physical camera/motion sensing. Both recorded UI flows passed (`build/ReviewerTour.xcresult`, `build/ReviewerAlarm.xcresult`).
 
 ### Separate integration checks
 
