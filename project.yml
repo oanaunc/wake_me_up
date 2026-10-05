@@ -1,0 +1,77 @@
+name: WakeMeUp
+options:
+  bundleIdPrefix: com.oanarinaldi
+  deploymentTarget:
+    iOS: '26.1'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    DEVELOPMENT_TEAM: HBD3XXQK45
+    MARKETING_VERSION: '1.0.0'
+    CURRENT_PROJECT_VERSION: '1'
+targets:
+  WakeMeUp:
+    type: application
+    platform: iOS
+    sources: [Sources, Resources]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.oanarinaldi.wakemeup
+        TARGETED_DEVICE_FAMILY: '1,2'
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Wake Me Up
+        UILaunchScreen: {}
+        NSAlarmKitUsageDescription: Wake Me Up schedules your chosen morning alarms, including when the app is closed.
+        NSCameraUsageDescription: Optionally count push-ups on your device. Camera images are never recorded or uploaded.
+        NSMotionUsageDescription: Optionally measure movement during your dance ritual. Motion data stays on your device.
+        ITSAppUsesNonExemptEncryption: false
+        UIUserInterfaceStyle: Light
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+  WakeTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [Tests]
+    dependencies:
+      - target: WakeMeUp
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+  WakeUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [UITests]
+    dependencies:
+      - target: WakeMeUp
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  WakeMeUp:
+    build:
+      targets:
+        WakeMeUp: all
+    test:
+      targets: [WakeTests, WakeUITests]
+  WakeStoreKit:
+    build:
+      targets:
+        WakeMeUp: all
+    run:
+      storeKitConfiguration: UITests/WakeProducts.storekit
+    test:
+      environmentVariables:
+        WAKE_STOREKIT_TEST: "1"
+      targets: [WakeUITests]
+  WakeAlarmIntegration:
+    build:
+      targets:
+        WakeMeUp: all
+    test:
+      environmentVariables:
+        WAKE_ALARM_TEST: "1"
+      targets: [WakeUITests]

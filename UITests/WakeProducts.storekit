@@ -1,0 +1,73 @@
+{
+  "identifier": "0971b54f-6d9c-4275-9cc2-9d0a098ab388",
+  "nonRenewingSubscriptions": [],
+  "products": [],
+  "settings": {
+    "_developerTeamID": "HBD3XXQK45",
+    "_failTransactionsEnabled": false,
+    "_locale": "en_US",
+    "_storefront": "USA",
+    "_storeKitErrors": []
+  },
+  "subscriptionGroups": [
+    {
+      "id": "ad46ac44-2830-42c1-a370-9687502d2bb3",
+      "localizations": [
+        {
+          "description": "More room for your mornings",
+          "displayName": "Wake Me Up Plus",
+          "locale": "en_US"
+        }
+      ],
+      "name": "Wake Me Up Plus",
+      "subscriptions": [
+        {
+          "displayPrice": "2.99",
+          "familyShareable": false,
+          "internalID": "5b43d0a1-d8d1-444f-afbf-9990f4fc93b7",
+          "localizations": [
+            {
+              "description": "20 alarms and custom challenge goals.",
+              "displayName": "Wake Me Up Plus Monthly",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.oanarinaldi.wakemeup.plus.monthly",
+          "referenceName": "Plus Monthly",
+          "type": "RecurringSubscription",
+          "adHocOffers": [],
+          "codeOffers": [],
+          "introductoryOffer": null,
+          "recurringSubscriptionPeriod": "P1M",
+          "subscriptionGroupID": "ad46ac44-2830-42c1-a370-9687502d2bb3",
+          "groupNumber": 1
+        },
+        {
+          "displayPrice": "19.99",
+          "familyShareable": false,
+          "internalID": "7ef25f0b-bd94-4b45-b465-5818c4892af9",
+          "localizations": [
+            {
+              "description": "20 alarms and custom challenge goals.",
+              "displayName": "Wake Me Up Plus Yearly",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.oanarinaldi.wakemeup.plus.yearly",
+          "referenceName": "Plus Yearly",
+          "type": "RecurringSubscription",
+          "adHocOffers": [],
+          "codeOffers": [],
+          "introductoryOffer": null,
+          "recurringSubscriptionPeriod": "P1Y",
+          "subscriptionGroupID": "ad46ac44-2830-42c1-a370-9687502d2bb3",
+          "groupNumber": 1
+        }
+      ]
+    }
+  ],
+  "version": {
+    "major": 3,
+    "minor": 0
+  }
+}

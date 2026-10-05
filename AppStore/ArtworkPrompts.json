@@ -1,0 +1,13 @@
+{
+  "mode": "Built-in ChatGPT image_gen",
+  "assets": [
+    {
+      "path": "Resources/Assets.xcassets/SunMascot.imageset/sun.png",
+      "prompt": "Use case: stylized-concept. Asset type: iOS app icon and sunrise mascot for Wake Me Up, an alarm app where dancing and push-ups start the morning. Primary request: an original adorable sculptural apricot-orange sun character, one round sun with eight rounded short ray petals, small joyful dark cocoa eyes and smile, playful tiny raised arms, tactile matte clay with delicate fine grain. Style: sophisticated contemporary 3D illustration, warm playful editorial design, pleasing soft shadows, striking memorable silhouette. Composition: centered large character occupying 75% of square frame, no frame, no rounded square border, solid very pale warm cream background filling entire square. Color palette: apricot orange and butter yellow, dark plum face, subtle blush cheeks. Lighting: soft sunrise studio glow. Constraints: no text, no logos, no watermark, no other objects. Output square high resolution."
+    },
+    {
+      "path": "Resources/Assets.xcassets/SunriseLandscape.imageset/sunrise.png",
+      "prompt": "Use case: illustration-story. Asset type: landscape header art for Wake Me Up iPhone and iPad app. Primary request: a tactile miniature dawn landscape, sculptural soft peach rolling hills, an adorable small orange sun with rounded petal rays and happy dark plum eyes and smile rising above the hill, a winding butter-yellow path toward the sun, two tiny abstract lavender trees. Sophisticated contemporary clay diorama, fine paper-like grain, calm playful atmosphere, editorial design for adults. Wide 3:2 horizontal composition with strong simple forms and open pale warm cream sky in upper half. Apricot, peach, butter yellow, muted lavender palette, soft sunrise lighting, gentle shadows. No text, no people, no watermark, no interface."
+    }
+  ]
+}

@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09430B04F7F8337B494B5CDD /* RoutinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06288D264C745C58E5EB1C90 /* RoutinesView.swift */; };
+		0E5FAB0A848E0C34429E20DD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4DF38390102C0868D8C10 /* Models.swift */; };
+		1A2B3FB7F27FC9A87C3A6E1F /* PurchaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3A55A01F3529747D387B8 /* PurchaseStore.swift */; };
+		22B04B7ED35E71AC6EC6EEB6 /* RiseAndShine.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5207FB12F7276921B11CF1C0 /* RiseAndShine.m4a */; };
+		2C304C21F861510A3DA07FC5 /* FirstLight.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B66B37A001BDBCA1614A07C9 /* FirstLight.m4a */; };
+		3089E081EB28F6C5EB47CE69 /* WakeProducts.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 9BE518AF87B7ED742AA724BF /* WakeProducts.storekit */; };
+		53331C68C91B17D6ECA7F0A2 /* WakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7F5900BF0E919603456C7 /* WakeUITests.swift */; };
+		6270EA4454B62AD67E08F923 /* RiseAndShineAlarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBD952D6594D981D0A4E1B /* RiseAndShineAlarm.caf */; };
+		639CA0330A1A428B17CE7423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 707CF48DF9B62DC3391E5B6C /* Assets.xcassets */; };
+		6829CA20CB9B7F350400B2AB /* MovementSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94DEFEBB6D5DFAF999B8F1A /* MovementSensor.swift */; };
+		6D22D7145C8D618B1657F629 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1661F00BD9C0D65AB3042F /* SettingsView.swift */; };
+		77572A8DCD7A5F1577C09ABB /* MorningAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03FDBE354E2950307710CFE /* MorningAudio.swift */; };
+		7B8F3E90F33FFC308F29CD8F /* SoftStartAlarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0EE6D8E1118222ACD1CEA995 /* SoftStartAlarm.caf */; };
+		9C45EC351672C999F10723AA /* PlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09848D325DA7ABC5523F1D /* PlusView.swift */; };
+		A573F3FC5110A6DDEBBF2382 /* WakeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAC6495D705EE549DDCDD59 /* WakeStore.swift */; };
+		AF7380F1CFED2A0D90F00CB4 /* FirstLightAlarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = D31EA1EB70A40B44738B21EA /* FirstLightAlarm.caf */; };
+		B748940F64E01804C80505E7 /* SoftStart.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B8F69C2DC21A78579473AE6B /* SoftStart.m4a */; };
+		CF3AA50EBB78FAB692176678 /* WakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA67AD52C7DA6D358B02FD /* WakeTests.swift */; };
+		D0D21C47AA7B3149B1539ACD /* WakeMeUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8644623A4C4C97AC6F5B48 /* WakeMeUpApp.swift */; };
+		E05C7FCD36676B2774A704FF /* AlarmEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688377D8AA6B340B6FBBA56 /* AlarmEditor.swift */; };
+		EA425ED5BCBA0673E166064A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AF1A8F866329F3CE8DF2C5 /* HomeView.swift */; };
+		EAFF49A359420D028F2F173F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 99AA11683B73CC1C3EADDD74 /* PrivacyInfo.xcprivacy */; };
+		EBE076C4CBCD6C015B3FB677 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B5D9F3CA247F4074BD13 /* Theme.swift */; };
+		ED999769E6C741177E31C3DA /* MorningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933AEF2AA6119AD30AF10D8 /* MorningView.swift */; };
+		F09E82D77542D7D8A18DAD58 /* AlarmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68BB0C71DCA7480CD535ED9 /* AlarmService.swift */; };
+		FDDFBF945493310F42401C57 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87584883ECB6BF38660BF2F4 /* JournalView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B3FAEDD804A492052C4BFC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C1A671469E7F7E162C959B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 638E424DE348CFB98222138A;
+			remoteInfo = WakeMeUp;
+		};
+		26B22A94248B503B5AC70FE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C1A671469E7F7E162C959B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 638E424DE348CFB98222138A;
+			remoteInfo = WakeMeUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06288D264C745C58E5EB1C90 /* RoutinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesView.swift; sourceTree = "<group>"; };
+		0EE6D8E1118222ACD1CEA995 /* SoftStartAlarm.caf */ = {isa = PBXFileReference; path = SoftStartAlarm.caf; sourceTree = "<group>"; };
+		2ADBD952D6594D981D0A4E1B /* RiseAndShineAlarm.caf */ = {isa = PBXFileReference; path = RiseAndShineAlarm.caf; sourceTree = "<group>"; };
+		40C7F5900BF0E919603456C7 /* WakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUITests.swift; sourceTree = "<group>"; };
+		44BA67AD52C7DA6D358B02FD /* WakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeTests.swift; sourceTree = "<group>"; };
+		47AF1A8F866329F3CE8DF2C5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4A8644623A4C4C97AC6F5B48 /* WakeMeUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeMeUpApp.swift; sourceTree = "<group>"; };
+		4FAC6495D705EE549DDCDD59 /* WakeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeStore.swift; sourceTree = "<group>"; };
+		5207FB12F7276921B11CF1C0 /* RiseAndShine.m4a */ = {isa = PBXFileReference; path = RiseAndShine.m4a; sourceTree = "<group>"; };
+		6360F7D0C13832ED9171635C /* WakeMeUp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WakeMeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		707CF48DF9B62DC3391E5B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83C6B5D9F3CA247F4074BD13 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		87584883ECB6BF38660BF2F4 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		887028BDEA435058E4C07B3A /* WakeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99AA11683B73CC1C3EADDD74 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		9BE518AF87B7ED742AA724BF /* WakeProducts.storekit */ = {isa = PBXFileReference; path = WakeProducts.storekit; sourceTree = "<group>"; };
+		A933AEF2AA6119AD30AF10D8 /* MorningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningView.swift; sourceTree = "<group>"; };
+		ABD3A55A01F3529747D387B8 /* PurchaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseStore.swift; sourceTree = "<group>"; };
+		AE6A321120710D58A66559FA /* WakeUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B4DF38390102C0868D8C10 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B66B37A001BDBCA1614A07C9 /* FirstLight.m4a */ = {isa = PBXFileReference; path = FirstLight.m4a; sourceTree = "<group>"; };
+		B68BB0C71DCA7480CD535ED9 /* AlarmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmService.swift; sourceTree = "<group>"; };
+		B8F69C2DC21A78579473AE6B /* SoftStart.m4a */ = {isa = PBXFileReference; path = SoftStart.m4a; sourceTree = "<group>"; };
+		C94DEFEBB6D5DFAF999B8F1A /* MovementSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementSensor.swift; sourceTree = "<group>"; };
+		CF1661F00BD9C0D65AB3042F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D31EA1EB70A40B44738B21EA /* FirstLightAlarm.caf */ = {isa = PBXFileReference; path = FirstLightAlarm.caf; sourceTree = "<group>"; };
+		D688377D8AA6B340B6FBBA56 /* AlarmEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEditor.swift; sourceTree = "<group>"; };
+		DC09848D325DA7ABC5523F1D /* PlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusView.swift; sourceTree = "<group>"; };
+		E03FDBE354E2950307710CFE /* MorningAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningAudio.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		18656326803A37DD70B4906F = {
+			isa = PBXGroup;
+			children = (
+				65A60237BC347383A505706C /* Resources */,
+				3A00CBF36800D5767367AE40 /* Sources */,
+				5F780967517E43DE26F0BAE5 /* Tests */,
+				97D1050A96CF75429965A53C /* UITests */,
+				E5E2EE91B294C1F1B7B92F42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A00CBF36800D5767367AE40 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D688377D8AA6B340B6FBBA56 /* AlarmEditor.swift */,
+				B68BB0C71DCA7480CD535ED9 /* AlarmService.swift */,
+				47AF1A8F866329F3CE8DF2C5 /* HomeView.swift */,
+				87584883ECB6BF38660BF2F4 /* JournalView.swift */,
+				B3B4DF38390102C0868D8C10 /* Models.swift */,
+				E03FDBE354E2950307710CFE /* MorningAudio.swift */,
+				A933AEF2AA6119AD30AF10D8 /* MorningView.swift */,
+				C94DEFEBB6D5DFAF999B8F1A /* MovementSensor.swift */,
+				DC09848D325DA7ABC5523F1D /* PlusView.swift */,
+				ABD3A55A01F3529747D387B8 /* PurchaseStore.swift */,
+				06288D264C745C58E5EB1C90 /* RoutinesView.swift */,
+				CF1661F00BD9C0D65AB3042F /* SettingsView.swift */,
+				83C6B5D9F3CA247F4074BD13 /* Theme.swift */,
+				4A8644623A4C4C97AC6F5B48 /* WakeMeUpApp.swift */,
+				4FAC6495D705EE549DDCDD59 /* WakeStore.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5F780967517E43DE26F0BAE5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				44BA67AD52C7DA6D358B02FD /* WakeTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		65A60237BC347383A505706C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				707CF48DF9B62DC3391E5B6C /* Assets.xcassets */,
+				B66B37A001BDBCA1614A07C9 /* FirstLight.m4a */,
+				D31EA1EB70A40B44738B21EA /* FirstLightAlarm.caf */,
+				99AA11683B73CC1C3EADDD74 /* PrivacyInfo.xcprivacy */,
+				5207FB12F7276921B11CF1C0 /* RiseAndShine.m4a */,
+				2ADBD952D6594D981D0A4E1B /* RiseAndShineAlarm.caf */,
+				B8F69C2DC21A78579473AE6B /* SoftStart.m4a */,
+				0EE6D8E1118222ACD1CEA995 /* SoftStartAlarm.caf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		97D1050A96CF75429965A53C /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				9BE518AF87B7ED742AA724BF /* WakeProducts.storekit */,
+				40C7F5900BF0E919603456C7 /* WakeUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		E5E2EE91B294C1F1B7B92F42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6360F7D0C13832ED9171635C /* WakeMeUp.app */,
+				887028BDEA435058E4C07B3A /* WakeTests.xctest */,
+				AE6A321120710D58A66559FA /* WakeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		638E424DE348CFB98222138A /* WakeMeUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D979FF99DBB501AEAC33F133 /* Build configuration list for PBXNativeTarget "WakeMeUp" */;
+			buildPhases = (
+				47588BA2A8D83F1B5DBEDFC8 /* Sources */,
+				588240F2D499C87DEF455840 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WakeMeUp;
+			packageProductDependencies = (
+			);
+			productName = WakeMeUp;
+			productReference = 6360F7D0C13832ED9171635C /* WakeMeUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69B72CA93A241EBF3E829B8D /* WakeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652F1960D834FFF43048CEB3 /* Build configuration list for PBXNativeTarget "WakeUITests" */;
+			buildPhases = (
+				54960BCF92CDB677FA54AFBE /* Sources */,
+				9DEB25C1C2A4460716F99B42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E42488319E33E37DAC784FE /* PBXTargetDependency */,
+			);
+			name = WakeUITests;
+			packageProductDependencies = (
+			);
+			productName = WakeUITests;
+			productReference = AE6A321120710D58A66559FA /* WakeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DD6CC8364C2A5EF73381A228 /* WakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D2C41F1A7F2B215CD6C8F26 /* Build configuration list for PBXNativeTarget "WakeTests" */;
+			buildPhases = (
+				F97903A0EE2E4BD549E1E56A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B31BBCD332699D74A1AA08FF /* PBXTargetDependency */,
+			);
+			name = WakeTests;
+			packageProductDependencies = (
+			);
+			productName = WakeTests;
+			productReference = 887028BDEA435058E4C07B3A /* WakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27C1A671469E7F7E162C959B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					638E424DE348CFB98222138A = {
+						DevelopmentTeam = HBD3XXQK45;
+						ProvisioningStyle = Automatic;
+					};
+					69B72CA93A241EBF3E829B8D = {
+						DevelopmentTeam = HBD3XXQK45;
+						TestTargetID = 638E424DE348CFB98222138A;
+					};
+					DD6CC8364C2A5EF73381A228 = {
+						DevelopmentTeam = HBD3XXQK45;
+					};
+				};
+			};
+			buildConfigurationList = ACEAC153B3AEA6102CCBA289 /* Build configuration list for PBXProject "WakeMeUp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 18656326803A37DD70B4906F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E5E2EE91B294C1F1B7B92F42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				638E424DE348CFB98222138A /* WakeMeUp */,
+				DD6CC8364C2A5EF73381A228 /* WakeTests */,
+				69B72CA93A241EBF3E829B8D /* WakeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		588240F2D499C87DEF455840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639CA0330A1A428B17CE7423 /* Assets.xcassets in Resources */,
+				2C304C21F861510A3DA07FC5 /* FirstLight.m4a in Resources */,
+				AF7380F1CFED2A0D90F00CB4 /* FirstLightAlarm.caf in Resources */,
+				EAFF49A359420D028F2F173F /* PrivacyInfo.xcprivacy in Resources */,
+				22B04B7ED35E71AC6EC6EEB6 /* RiseAndShine.m4a in Resources */,
+				6270EA4454B62AD67E08F923 /* RiseAndShineAlarm.caf in Resources */,
+				B748940F64E01804C80505E7 /* SoftStart.m4a in Resources */,
+				7B8F3E90F33FFC308F29CD8F /* SoftStartAlarm.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DEB25C1C2A4460716F99B42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3089E081EB28F6C5EB47CE69 /* WakeProducts.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47588BA2A8D83F1B5DBEDFC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E05C7FCD36676B2774A704FF /* AlarmEditor.swift in Sources */,
+				F09E82D77542D7D8A18DAD58 /* AlarmService.swift in Sources */,
+				EA425ED5BCBA0673E166064A /* HomeView.swift in Sources */,
+				FDDFBF945493310F42401C57 /* JournalView.swift in Sources */,
+				0E5FAB0A848E0C34429E20DD /* Models.swift in Sources */,
+				77572A8DCD7A5F1577C09ABB /* MorningAudio.swift in Sources */,
+				ED999769E6C741177E31C3DA /* MorningView.swift in Sources */,
+				6829CA20CB9B7F350400B2AB /* MovementSensor.swift in Sources */,
+				9C45EC351672C999F10723AA /* PlusView.swift in Sources */,
+				1A2B3FB7F27FC9A87C3A6E1F /* PurchaseStore.swift in Sources */,
+				09430B04F7F8337B494B5CDD /* RoutinesView.swift in Sources */,
+				6D22D7145C8D618B1657F629 /* SettingsView.swift in Sources */,
+				EBE076C4CBCD6C015B3FB677 /* Theme.swift in Sources */,
+				D0D21C47AA7B3149B1539ACD /* WakeMeUpApp.swift in Sources */,
+				A573F3FC5110A6DDEBBF2382 /* WakeStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54960BCF92CDB677FA54AFBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53331C68C91B17D6ECA7F0A2 /* WakeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F97903A0EE2E4BD549E1E56A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3AA50EBB78FAB692176678 /* WakeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E42488319E33E37DAC784FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 638E424DE348CFB98222138A /* WakeMeUp */;
+			targetProxy = 0B3FAEDD804A492052C4BFC7 /* PBXContainerItemProxy */;
+		};
+		B31BBCD332699D74A1AA08FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 638E424DE348CFB98222138A /* WakeMeUp */;
+			targetProxy = 26B22A94248B503B5AC70FE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1FE3601F7EB1D030FB5FC7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.WakeUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WakeMeUp;
+			};
+			name = Release;
+		};
+		3778AEEC6E4A5657F5AF219C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HBD3XXQK45;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		93DE04F834B5359B9C39C5B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.wakemeup;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94AD3F273C2BEAD8CDF7100B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.WakeTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakeMeUp.app/WakeMeUp";
+			};
+			name = Release;
+		};
+		95414F433F20B1017D956D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.wakemeup;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A43D5217695DCB166AA52C98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.WakeTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakeMeUp.app/WakeMeUp";
+			};
+			name = Debug;
+		};
+		D3DC777E956653726D9649A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HBD3XXQK45;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F16995C3239D555A40D0DB5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.WakeUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WakeMeUp;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D2C41F1A7F2B215CD6C8F26 /* Build configuration list for PBXNativeTarget "WakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A43D5217695DCB166AA52C98 /* Debug */,
+				94AD3F273C2BEAD8CDF7100B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		652F1960D834FFF43048CEB3 /* Build configuration list for PBXNativeTarget "WakeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16995C3239D555A40D0DB5B /* Debug */,
+				1FE3601F7EB1D030FB5FC7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ACEAC153B3AEA6102CCBA289 /* Build configuration list for PBXProject "WakeMeUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DC777E956653726D9649A2 /* Debug */,
+				3778AEEC6E4A5657F5AF219C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D979FF99DBB501AEAC33F133 /* Build configuration list for PBXNativeTarget "WakeMeUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95414F433F20B1017D956D58 /* Debug */,
+				93DE04F834B5359B9C39C5B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27C1A671469E7F7E162C959B /* Project object */;
+}
