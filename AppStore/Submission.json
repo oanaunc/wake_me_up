@@ -2,22 +2,16 @@
   "appID": "6819282141",
   "appName": "Wake Me Up: Move & Rise",
   "version": "1.0",
-  "build": "1",
-  "status": "Rejected",
-  "submissionID": "b3e1440b-0593-4b3f-908e-c02bef5f698a",
-  "submittedAtLocal": "2026-10-05 17:03",
+  "build": "2",
+  "status": "Waiting for Review",
+  "submissionID": "cce954de-0797-43e4-a951-abbe792326eb",
+  "submittedAtLocal": "2026-10-06 14:12",
   "timezone": "Europe/Bucharest",
-  "reviewURL": "https://appstoreconnect.apple.com/apps/6819282141/distribution/reviewsubmissions/details/b3e1440b-0593-4b3f-908e-c02bef5f698a",
-  "reviewAttachment": "WakeMeUp-Reviewer-Demo.mp4",
-  "rejectionObservedOn": "2026-10-06",
-  "rejectionGuidelines": [
-    "4.3 Spam",
-    "4.2.6 App Generation Services"
-  ],
-  "rejectionReasonSummary": "Apple described duplicate or insufficiently distinct functionality/content and requested answers to nine questions. Its message did not state that simultaneous submissions caused rejection.",
+  "reviewURL": "https://appstoreconnect.apple.com/apps/6819282141/distribution/reviewsubmissions/details/cce954de-0797-43e4-a951-abbe792326eb",
+  "reviewAttachment": "WakeMeUp-Build2-Demo.mp4",
   "revision": {
     "build": "2",
-    "status": "Build 2 processed and selected in the revised listing draft; new screenshots, reviewer notes and video saved; all nine rejection questions answered to Apple with the video attached. Subscription group and both products Ready for Review at level 1. App version not resubmitted.",
+    "status": "Waiting for Review",
     "appReviewResponseSent": true,
     "externalBetaFeedbackCollected": false,
     "hardwareChecksComplete": false,
@@ -29,8 +23,8 @@
     "testFlightURL": "https://appstoreconnect.apple.com/teams/54f57056-d9bb-4a38-aad1-31c9a6ba5707/apps/6819282141/testflight/ios/56a67188-9e0e-4489-bd4c-df5dfbba187a",
     "selectedInVersionDraft": true,
     "draftVersion": "1.0",
-    "appStoreVersionStatus": "Prepare for Submission",
-    "originalReviewSubmissionStatus": "Rejected",
+    "appStoreVersionStatus": "Waiting for Review",
+    "originalReviewSubmissionStatus": "Rejected app association removed to include the app with its first subscriptions in the new draft; original rejection and response retained locally.",
     "reviewResponseFile": "AppStore/Review/ReviewerResponse.json",
     "reviewResponseAttachment": "WakeMeUp-Build2-Demo.mp4",
     "newScreenshotsUploaded": {
@@ -40,6 +34,33 @@
     },
     "subscriptionConfiguration": "AppStore/Review/SubscriptionConfiguration.json",
     "subscriptionGroupAndProductsAddedToDraft": true,
-    "resubmitted": false
-  }
+    "resubmitted": true,
+    "submissionID": "cce954de-0797-43e4-a951-abbe792326eb",
+    "reviewURL": "https://appstoreconnect.apple.com/apps/6819282141/distribution/reviewsubmissions/details/cce954de-0797-43e4-a951-abbe792326eb",
+    "submittedAtAsDisplayed": "6 October 2026, 2:12 PM",
+    "submissionItemCount": 4,
+    "submissionProof": "AppStore/Review/Build2WaitingForReview.jpg",
+    "originalRejectedItemRemovedForCombinedSubmission": true,
+    "testingClaims": "Completed development tests only. No claim of 20 external testers or positive user feedback was submitted."
+  },
+  "previousSubmissions": [
+    {
+      "appID": "6819282141",
+      "appName": "Wake Me Up: Move & Rise",
+      "version": "1.0",
+      "build": "1",
+      "status": "Rejected",
+      "submissionID": "b3e1440b-0593-4b3f-908e-c02bef5f698a",
+      "submittedAtLocal": "2026-10-05 17:03",
+      "timezone": "Europe/Bucharest",
+      "reviewURL": "https://appstoreconnect.apple.com/apps/6819282141/distribution/reviewsubmissions/details/b3e1440b-0593-4b3f-908e-c02bef5f698a",
+      "reviewAttachment": "WakeMeUp-Reviewer-Demo.mp4",
+      "rejectionObservedOn": "2026-10-06",
+      "rejectionGuidelines": [
+        "4.3 Spam",
+        "4.2.6 App Generation Services"
+      ],
+      "rejectionReasonSummary": "Apple described duplicate or insufficiently distinct functionality/content and requested answers to nine questions. Its message did not state that simultaneous submissions caused rejection."
+    }
+  ]
 }

@@ -48,7 +48,11 @@
     "Camera destination matching and motion/camera estimation on hardware",
     "Genuine external TestFlight feedback"
   ],
-  "resubmitted": false,
+  "resubmitted": true,
   "responseFile": "AppStore/Review/ReviewerResponse.json",
-  "responseSentAtAsDisplayed": "6 October 2026, 2:02 PM"
+  "responseSentAtAsDisplayed": "6 October 2026, 2:02 PM",
+  "submissionID": "cce954de-0797-43e4-a951-abbe792326eb",
+  "submissionStatus": "Waiting for Review",
+  "submittedAtAsDisplayed": "6 October 2026, 2:12 PM",
+  "unverifiedTesterClaimSubmitted": false
 }

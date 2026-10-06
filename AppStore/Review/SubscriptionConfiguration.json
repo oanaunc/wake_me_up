@@ -12,7 +12,7 @@
       "duration": "1 month",
       "usPrice": "2.99 USD",
       "observedServiceLevel": 1,
-      "status": "Ready for Review",
+      "status": "Waiting for Review",
       "availability": "All countries or regions selected"
     },
     {
@@ -21,7 +21,7 @@
       "duration": "1 year",
       "usPrice": "19.99 USD",
       "observedServiceLevel": 1,
-      "status": "Ready for Review",
+      "status": "Waiting for Review",
       "availability": "All countries or regions selected"
     }
   ],
@@ -31,5 +31,10 @@
   "localPurchaseAndRestoreTest": "passed",
   "productionTransactionTested": false,
   "addedToReviewDraft": true,
-  "groupStatus": "Ready for Review"
+  "groupStatus": "Waiting for Review",
+  "submittedForReview": true,
+  "submissionID": "cce954de-0797-43e4-a951-abbe792326eb",
+  "reviewURL": "https://appstoreconnect.apple.com/apps/6819282141/distribution/reviewsubmissions/details/cce954de-0797-43e4-a951-abbe792326eb",
+  "submittedWithAppBuild": "1.0 (2)",
+  "submittedAtAsDisplayed": "6 October 2026, 2:12 PM"
 }
