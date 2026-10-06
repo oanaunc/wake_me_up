@@ -28,6 +28,8 @@
     "testFlightBuildID": "56a67188-9e0e-4489-bd4c-df5dfbba187a",
     "testFlightURL": "https://appstoreconnect.apple.com/teams/54f57056-d9bb-4a38-aad1-31c9a6ba5707/apps/6819282141/testflight/ios/56a67188-9e0e-4489-bd4c-df5dfbba187a",
     "selectedInVersionDraft": true,
-    "draftVersion": "1.0"
+    "draftVersion": "1.0",
+    "appStoreVersionStatus": "Prepare for Submission",
+    "originalReviewSubmissionStatus": "Rejected"
   }
 }
