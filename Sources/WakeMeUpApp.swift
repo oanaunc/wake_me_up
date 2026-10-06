@@ -33,12 +33,13 @@ struct RootView: View {
         .fullScreenCover(isPresented: Binding(get: { !welcomed }, set: { if !$0 { welcomed = true } })) {
             WelcomeView { welcomed = true }
         }
-        .fullScreenCover(item: $store.session) { session in MorningView(session: session).id(session.alarm.mission) }
+        .fullScreenCover(item: $store.session) { session in MorningView(session: session).id("\(session.id)-\(session.stepIndex)-\(session.currentStep.mission.rawValue)") }
+        .fullScreenCover(item:$store.awakeCheck) {check in AwakeCheckView(check:check)}
         .alert("A little attention", isPresented: Binding(get: { store.error != nil }, set: { if !$0 { store.error = nil } })) { Button("OK") { store.error = nil } } message: { Text(store.error ?? "") }
-        .onChange(of: phase) { _, state in if state == .active { store.resumePending() } }
+        .onChange(of: phase) { _, state in if state == .active { store.resumePending();Task {await store.refreshSchedules()} } }
         .onChange(of: welcomed) { _, ready in if ready { store.resumePending() } }
         .task {
-            if welcomed { store.resumePending() }
+            if welcomed { store.resumePending();await store.refreshSchedules() }
         }
     }
 }

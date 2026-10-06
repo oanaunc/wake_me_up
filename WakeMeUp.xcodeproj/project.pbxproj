@@ -7,32 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06DB8375F433886F4A8E6939 /* MorningGroove.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1FFA4861481823A46AD9F75D /* MorningGroove.m4a */; };
 		09430B04F7F8337B494B5CDD /* RoutinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06288D264C745C58E5EB1C90 /* RoutinesView.swift */; };
+		0B8942B9664356260F2BEABA /* WakeMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E6F2B614B4535CE1B2E5C4 /* WakeMetadata.swift */; };
 		0E5FAB0A848E0C34429E20DD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4DF38390102C0868D8C10 /* Models.swift */; };
+		1161F83CEEB48229F3FAFC5A /* FocusMissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A216272C7C6A4F483A18B /* FocusMissions.swift */; };
+		16874EE3C3AD5A5C700B82CE /* CodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E632BE2AC41E7A0DC70581 /* CodeScanner.swift */; };
 		1A2B3FB7F27FC9A87C3A6E1F /* PurchaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3A55A01F3529747D387B8 /* PurchaseStore.swift */; };
+		1BB267B4FD4221C0D0B7E905 /* MorningGrooveAlarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = 939FA361206111A975E1743D /* MorningGrooveAlarm.caf */; };
+		224D8B0696F54AD5B4F80680 /* BrightMarimbaAlarmGentle.caf in Resources */ = {isa = PBXBuildFile; fileRef = B57BA829DB25B531D44B8AF5 /* BrightMarimbaAlarmGentle.caf */; };
 		22B04B7ED35E71AC6EC6EEB6 /* RiseAndShine.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5207FB12F7276921B11CF1C0 /* RiseAndShine.m4a */; };
+		2784426F77A605930660CDEB /* WakeAlarmActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB3824386AB9676CF6C93D /* WakeAlarmActivity.swift */; };
 		2C304C21F861510A3DA07FC5 /* FirstLight.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B66B37A001BDBCA1614A07C9 /* FirstLight.m4a */; };
+		2E268C9A6270BD90C6A35CC2 /* QuietKeysAlarmGentle.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8DE3F3E905DD96F9F30C7520 /* QuietKeysAlarmGentle.caf */; };
 		3089E081EB28F6C5EB47CE69 /* WakeProducts.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 9BE518AF87B7ED742AA724BF /* WakeProducts.storekit */; };
+		34FD58361A85A03ED61C9B39 /* QuietKeys.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 07902B99199E56E3EE6BF684 /* QuietKeys.m4a */; };
+		4B2815C07C3545C1B63BA92B /* WakeShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE80ECE761AE8F17226BDB9 /* WakeShortcuts.swift */; };
+		503BA30714C82F8ABC09FDF4 /* MorningNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4640EDAFBFDF896BA0B99 /* MorningNotifications.swift */; };
 		53331C68C91B17D6ECA7F0A2 /* WakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7F5900BF0E919603456C7 /* WakeUITests.swift */; };
+		605FC215F8E45477F74411F8 /* MorningTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32058172829CFE08E2292C6B /* MorningTools.swift */; };
 		6270EA4454B62AD67E08F923 /* RiseAndShineAlarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBD952D6594D981D0A4E1B /* RiseAndShineAlarm.caf */; };
 		639CA0330A1A428B17CE7423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 707CF48DF9B62DC3391E5B6C /* Assets.xcassets */; };
 		6829CA20CB9B7F350400B2AB /* MovementSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94DEFEBB6D5DFAF999B8F1A /* MovementSensor.swift */; };
+		690AD07BB1422600369AEE33 /* WakeAlarmActivity.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D25FB6BB38C5AF6CC5F019BE /* WakeAlarmActivity.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		694909DB6D7711B8AAC3029F /* JournalShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3518418D77A28C3805105BE /* JournalShareSheet.swift */; };
 		6D22D7145C8D618B1657F629 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1661F00BD9C0D65AB3042F /* SettingsView.swift */; };
 		77572A8DCD7A5F1577C09ABB /* MorningAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03FDBE354E2950307710CFE /* MorningAudio.swift */; };
 		7B8F3E90F33FFC308F29CD8F /* SoftStartAlarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0EE6D8E1118222ACD1CEA995 /* SoftStartAlarm.caf */; };
+		7F39C8F58E175D2CCCD54E2A /* SoftStartAlarmGentle.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8C6FD501A5258D6D25963670 /* SoftStartAlarmGentle.caf */; };
+		859DF9E12547EF67A996D8A5 /* MorningGrooveAlarmGentle.caf in Resources */ = {isa = PBXBuildFile; fileRef = 74D44AFE16C01A075D2F08C8 /* MorningGrooveAlarmGentle.caf */; };
+		8A5639F6FAC64FF98B396442 /* FirstLightAlarmGentle.caf in Resources */ = {isa = PBXBuildFile; fileRef = A3667832B8A8D3F446B8B248 /* FirstLightAlarmGentle.caf */; };
+		8B5B2B9E666ECB61379B2071 /* WakeMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E6F2B614B4535CE1B2E5C4 /* WakeMetadata.swift */; };
 		9C45EC351672C999F10723AA /* PlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09848D325DA7ABC5523F1D /* PlusView.swift */; };
 		A573F3FC5110A6DDEBBF2382 /* WakeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAC6495D705EE549DDCDD59 /* WakeStore.swift */; };
+		ACB53018F0D1ED8CB2EC8AF0 /* QuietKeysAlarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6B95154A655BE39A5F688325 /* QuietKeysAlarm.caf */; };
 		AF7380F1CFED2A0D90F00CB4 /* FirstLightAlarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = D31EA1EB70A40B44738B21EA /* FirstLightAlarm.caf */; };
+		B15BA76F6D10F6B858B95E47 /* ToneLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61CF4B90F02F2BEB201202 /* ToneLibrary.swift */; };
 		B748940F64E01804C80505E7 /* SoftStart.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B8F69C2DC21A78579473AE6B /* SoftStart.m4a */; };
+		BF5CFAEC900DAF7A41344BEA /* AlarmPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB3EE2EB0AFBBB3628C3B3 /* AlarmPlan.swift */; };
 		CF3AA50EBB78FAB692176678 /* WakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA67AD52C7DA6D358B02FD /* WakeTests.swift */; };
 		D0D21C47AA7B3149B1539ACD /* WakeMeUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8644623A4C4C97AC6F5B48 /* WakeMeUpApp.swift */; };
+		DCC4786D2309C46ABDC8AA35 /* BrightMarimba.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4409947F90BD89E294564F3C /* BrightMarimba.m4a */; };
 		E05C7FCD36676B2774A704FF /* AlarmEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D688377D8AA6B340B6FBBA56 /* AlarmEditor.swift */; };
 		EA425ED5BCBA0673E166064A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AF1A8F866329F3CE8DF2C5 /* HomeView.swift */; };
 		EAFF49A359420D028F2F173F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 99AA11683B73CC1C3EADDD74 /* PrivacyInfo.xcprivacy */; };
 		EBE076C4CBCD6C015B3FB677 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6B5D9F3CA247F4074BD13 /* Theme.swift */; };
 		ED999769E6C741177E31C3DA /* MorningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933AEF2AA6119AD30AF10D8 /* MorningView.swift */; };
+		EFA7CF561B2D8C29A8A3D190 /* RouteEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E58F7BA474F6C87CB58698 /* RouteEditor.swift */; };
 		F09E82D77542D7D8A18DAD58 /* AlarmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68BB0C71DCA7480CD535ED9 /* AlarmService.swift */; };
+		F9830DDA35E0CB19376FBD2B /* RiseAndShineAlarmGentle.caf in Resources */ = {isa = PBXBuildFile; fileRef = 9A96C266F6E69AA9DA2520D8 /* RiseAndShineAlarmGentle.caf */; };
 		FDDFBF945493310F42401C57 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87584883ECB6BF38660BF2F4 /* JournalView.swift */; };
+		FE1044845C303E921ED7ED4C /* BrightMarimbaAlarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5DB006EBB9D92A4384C21E2 /* BrightMarimbaAlarm.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,38 +75,84 @@
 			remoteGlobalIDString = 638E424DE348CFB98222138A;
 			remoteInfo = WakeMeUp;
 		};
+		BDE8A457794845A6E9AB6F11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C1A671469E7F7E162C959B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B89FB55EC9AFF50B62FAF767;
+			remoteInfo = WakeAlarmActivity;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		778E56CB957328168A777CE5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				690AD07BB1422600369AEE33 /* WakeAlarmActivity.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		007359B531F9D5BC18962582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		06288D264C745C58E5EB1C90 /* RoutinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesView.swift; sourceTree = "<group>"; };
+		07902B99199E56E3EE6BF684 /* QuietKeys.m4a */ = {isa = PBXFileReference; path = QuietKeys.m4a; sourceTree = "<group>"; };
 		0EE6D8E1118222ACD1CEA995 /* SoftStartAlarm.caf */ = {isa = PBXFileReference; path = SoftStartAlarm.caf; sourceTree = "<group>"; };
+		1FFA4861481823A46AD9F75D /* MorningGroove.m4a */ = {isa = PBXFileReference; path = MorningGroove.m4a; sourceTree = "<group>"; };
 		2ADBD952D6594D981D0A4E1B /* RiseAndShineAlarm.caf */ = {isa = PBXFileReference; path = RiseAndShineAlarm.caf; sourceTree = "<group>"; };
+		2CBB3824386AB9676CF6C93D /* WakeAlarmActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeAlarmActivity.swift; sourceTree = "<group>"; };
+		32058172829CFE08E2292C6B /* MorningTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningTools.swift; sourceTree = "<group>"; };
 		40C7F5900BF0E919603456C7 /* WakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUITests.swift; sourceTree = "<group>"; };
+		4409947F90BD89E294564F3C /* BrightMarimba.m4a */ = {isa = PBXFileReference; path = BrightMarimba.m4a; sourceTree = "<group>"; };
 		44BA67AD52C7DA6D358B02FD /* WakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeTests.swift; sourceTree = "<group>"; };
+		44E58F7BA474F6C87CB58698 /* RouteEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteEditor.swift; sourceTree = "<group>"; };
 		47AF1A8F866329F3CE8DF2C5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4A8644623A4C4C97AC6F5B48 /* WakeMeUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeMeUpApp.swift; sourceTree = "<group>"; };
+		4F61CF4B90F02F2BEB201202 /* ToneLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneLibrary.swift; sourceTree = "<group>"; };
 		4FAC6495D705EE549DDCDD59 /* WakeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeStore.swift; sourceTree = "<group>"; };
 		5207FB12F7276921B11CF1C0 /* RiseAndShine.m4a */ = {isa = PBXFileReference; path = RiseAndShine.m4a; sourceTree = "<group>"; };
+		53E6F2B614B4535CE1B2E5C4 /* WakeMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeMetadata.swift; sourceTree = "<group>"; };
 		6360F7D0C13832ED9171635C /* WakeMeUp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WakeMeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B95154A655BE39A5F688325 /* QuietKeysAlarm.caf */ = {isa = PBXFileReference; path = QuietKeysAlarm.caf; sourceTree = "<group>"; };
 		707CF48DF9B62DC3391E5B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74D44AFE16C01A075D2F08C8 /* MorningGrooveAlarmGentle.caf */ = {isa = PBXFileReference; path = MorningGrooveAlarmGentle.caf; sourceTree = "<group>"; };
 		83C6B5D9F3CA247F4074BD13 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		87584883ECB6BF38660BF2F4 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		887028BDEA435058E4C07B3A /* WakeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6FD501A5258D6D25963670 /* SoftStartAlarmGentle.caf */ = {isa = PBXFileReference; path = SoftStartAlarmGentle.caf; sourceTree = "<group>"; };
+		8DE3F3E905DD96F9F30C7520 /* QuietKeysAlarmGentle.caf */ = {isa = PBXFileReference; path = QuietKeysAlarmGentle.caf; sourceTree = "<group>"; };
+		939FA361206111A975E1743D /* MorningGrooveAlarm.caf */ = {isa = PBXFileReference; path = MorningGrooveAlarm.caf; sourceTree = "<group>"; };
 		99AA11683B73CC1C3EADDD74 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		9A96C266F6E69AA9DA2520D8 /* RiseAndShineAlarmGentle.caf */ = {isa = PBXFileReference; path = RiseAndShineAlarmGentle.caf; sourceTree = "<group>"; };
 		9BE518AF87B7ED742AA724BF /* WakeProducts.storekit */ = {isa = PBXFileReference; path = WakeProducts.storekit; sourceTree = "<group>"; };
+		9DE80ECE761AE8F17226BDB9 /* WakeShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeShortcuts.swift; sourceTree = "<group>"; };
+		A3518418D77A28C3805105BE /* JournalShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalShareSheet.swift; sourceTree = "<group>"; };
+		A3667832B8A8D3F446B8B248 /* FirstLightAlarmGentle.caf */ = {isa = PBXFileReference; path = FirstLightAlarmGentle.caf; sourceTree = "<group>"; };
 		A933AEF2AA6119AD30AF10D8 /* MorningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningView.swift; sourceTree = "<group>"; };
+		AABB3EE2EB0AFBBB3628C3B3 /* AlarmPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPlan.swift; sourceTree = "<group>"; };
 		ABD3A55A01F3529747D387B8 /* PurchaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseStore.swift; sourceTree = "<group>"; };
 		AE6A321120710D58A66559FA /* WakeUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B4DF38390102C0868D8C10 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B4A4640EDAFBFDF896BA0B99 /* MorningNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningNotifications.swift; sourceTree = "<group>"; };
+		B57BA829DB25B531D44B8AF5 /* BrightMarimbaAlarmGentle.caf */ = {isa = PBXFileReference; path = BrightMarimbaAlarmGentle.caf; sourceTree = "<group>"; };
+		B5DB006EBB9D92A4384C21E2 /* BrightMarimbaAlarm.caf */ = {isa = PBXFileReference; path = BrightMarimbaAlarm.caf; sourceTree = "<group>"; };
 		B66B37A001BDBCA1614A07C9 /* FirstLight.m4a */ = {isa = PBXFileReference; path = FirstLight.m4a; sourceTree = "<group>"; };
 		B68BB0C71DCA7480CD535ED9 /* AlarmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmService.swift; sourceTree = "<group>"; };
 		B8F69C2DC21A78579473AE6B /* SoftStart.m4a */ = {isa = PBXFileReference; path = SoftStart.m4a; sourceTree = "<group>"; };
 		C94DEFEBB6D5DFAF999B8F1A /* MovementSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementSensor.swift; sourceTree = "<group>"; };
 		CF1661F00BD9C0D65AB3042F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D25FB6BB38C5AF6CC5F019BE /* WakeAlarmActivity.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = WakeAlarmActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31EA1EB70A40B44738B21EA /* FirstLightAlarm.caf */ = {isa = PBXFileReference; path = FirstLightAlarm.caf; sourceTree = "<group>"; };
 		D688377D8AA6B340B6FBBA56 /* AlarmEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEditor.swift; sourceTree = "<group>"; };
+		DA7A216272C7C6A4F483A18B /* FocusMissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusMissions.swift; sourceTree = "<group>"; };
 		DC09848D325DA7ABC5523F1D /* PlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusView.swift; sourceTree = "<group>"; };
 		E03FDBE354E2950307710CFE /* MorningAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningAudio.swift; sourceTree = "<group>"; };
+		F1E632BE2AC41E7A0DC70581 /* CodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -92,6 +163,7 @@
 				3A00CBF36800D5767367AE40 /* Sources */,
 				5F780967517E43DE26F0BAE5 /* Tests */,
 				97D1050A96CF75429965A53C /* UITests */,
+				BBACA99F749CD3B466CFA75E /* Widgets */,
 				E5E2EE91B294C1F1B7B92F42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,19 +172,29 @@
 			isa = PBXGroup;
 			children = (
 				D688377D8AA6B340B6FBBA56 /* AlarmEditor.swift */,
+				AABB3EE2EB0AFBBB3628C3B3 /* AlarmPlan.swift */,
 				B68BB0C71DCA7480CD535ED9 /* AlarmService.swift */,
+				F1E632BE2AC41E7A0DC70581 /* CodeScanner.swift */,
+				DA7A216272C7C6A4F483A18B /* FocusMissions.swift */,
 				47AF1A8F866329F3CE8DF2C5 /* HomeView.swift */,
+				A3518418D77A28C3805105BE /* JournalShareSheet.swift */,
 				87584883ECB6BF38660BF2F4 /* JournalView.swift */,
 				B3B4DF38390102C0868D8C10 /* Models.swift */,
 				E03FDBE354E2950307710CFE /* MorningAudio.swift */,
+				B4A4640EDAFBFDF896BA0B99 /* MorningNotifications.swift */,
+				32058172829CFE08E2292C6B /* MorningTools.swift */,
 				A933AEF2AA6119AD30AF10D8 /* MorningView.swift */,
 				C94DEFEBB6D5DFAF999B8F1A /* MovementSensor.swift */,
 				DC09848D325DA7ABC5523F1D /* PlusView.swift */,
 				ABD3A55A01F3529747D387B8 /* PurchaseStore.swift */,
+				44E58F7BA474F6C87CB58698 /* RouteEditor.swift */,
 				06288D264C745C58E5EB1C90 /* RoutinesView.swift */,
 				CF1661F00BD9C0D65AB3042F /* SettingsView.swift */,
 				83C6B5D9F3CA247F4074BD13 /* Theme.swift */,
+				4F61CF4B90F02F2BEB201202 /* ToneLibrary.swift */,
+				53E6F2B614B4535CE1B2E5C4 /* WakeMetadata.swift */,
 				4A8644623A4C4C97AC6F5B48 /* WakeMeUpApp.swift */,
+				9DE80ECE761AE8F17226BDB9 /* WakeShortcuts.swift */,
 				4FAC6495D705EE549DDCDD59 /* WakeStore.swift */,
 			);
 			path = Sources;
@@ -130,13 +212,25 @@
 			isa = PBXGroup;
 			children = (
 				707CF48DF9B62DC3391E5B6C /* Assets.xcassets */,
+				4409947F90BD89E294564F3C /* BrightMarimba.m4a */,
+				B5DB006EBB9D92A4384C21E2 /* BrightMarimbaAlarm.caf */,
+				B57BA829DB25B531D44B8AF5 /* BrightMarimbaAlarmGentle.caf */,
 				B66B37A001BDBCA1614A07C9 /* FirstLight.m4a */,
 				D31EA1EB70A40B44738B21EA /* FirstLightAlarm.caf */,
+				A3667832B8A8D3F446B8B248 /* FirstLightAlarmGentle.caf */,
+				1FFA4861481823A46AD9F75D /* MorningGroove.m4a */,
+				939FA361206111A975E1743D /* MorningGrooveAlarm.caf */,
+				74D44AFE16C01A075D2F08C8 /* MorningGrooveAlarmGentle.caf */,
 				99AA11683B73CC1C3EADDD74 /* PrivacyInfo.xcprivacy */,
+				07902B99199E56E3EE6BF684 /* QuietKeys.m4a */,
+				6B95154A655BE39A5F688325 /* QuietKeysAlarm.caf */,
+				8DE3F3E905DD96F9F30C7520 /* QuietKeysAlarmGentle.caf */,
 				5207FB12F7276921B11CF1C0 /* RiseAndShine.m4a */,
 				2ADBD952D6594D981D0A4E1B /* RiseAndShineAlarm.caf */,
+				9A96C266F6E69AA9DA2520D8 /* RiseAndShineAlarmGentle.caf */,
 				B8F69C2DC21A78579473AE6B /* SoftStart.m4a */,
 				0EE6D8E1118222ACD1CEA995 /* SoftStartAlarm.caf */,
+				8C6FD501A5258D6D25963670 /* SoftStartAlarmGentle.caf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -150,9 +244,19 @@
 			path = UITests;
 			sourceTree = "<group>";
 		};
+		BBACA99F749CD3B466CFA75E /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				007359B531F9D5BC18962582 /* Info.plist */,
+				2CBB3824386AB9676CF6C93D /* WakeAlarmActivity.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
 		E5E2EE91B294C1F1B7B92F42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				D25FB6BB38C5AF6CC5F019BE /* WakeAlarmActivity.appex */,
 				6360F7D0C13832ED9171635C /* WakeMeUp.app */,
 				887028BDEA435058E4C07B3A /* WakeTests.xctest */,
 				AE6A321120710D58A66559FA /* WakeUITests.xctest */,
@@ -169,10 +273,12 @@
 			buildPhases = (
 				47588BA2A8D83F1B5DBEDFC8 /* Sources */,
 				588240F2D499C87DEF455840 /* Resources */,
+				778E56CB957328168A777CE5 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4F4C0DE7B63A7C0B701F1CAE /* PBXTargetDependency */,
 			);
 			name = WakeMeUp;
 			packageProductDependencies = (
@@ -199,6 +305,23 @@
 			productName = WakeUITests;
 			productReference = AE6A321120710D58A66559FA /* WakeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B89FB55EC9AFF50B62FAF767 /* WakeAlarmActivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A121CAE5936CA863D9D6ECF5 /* Build configuration list for PBXNativeTarget "WakeAlarmActivity" */;
+			buildPhases = (
+				E92DCD4B767A8BFD3CFBBC3B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WakeAlarmActivity;
+			packageProductDependencies = (
+			);
+			productName = WakeAlarmActivity;
+			productReference = D25FB6BB38C5AF6CC5F019BE /* WakeAlarmActivity.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		DD6CC8364C2A5EF73381A228 /* WakeTests */ = {
 			isa = PBXNativeTarget;
@@ -235,6 +358,10 @@
 						DevelopmentTeam = HBD3XXQK45;
 						TestTargetID = 638E424DE348CFB98222138A;
 					};
+					B89FB55EC9AFF50B62FAF767 = {
+						DevelopmentTeam = HBD3XXQK45;
+						ProvisioningStyle = Automatic;
+					};
 					DD6CC8364C2A5EF73381A228 = {
 						DevelopmentTeam = HBD3XXQK45;
 					};
@@ -255,6 +382,7 @@
 			projectRoot = "";
 			targets = (
 				638E424DE348CFB98222138A /* WakeMeUp */,
+				B89FB55EC9AFF50B62FAF767 /* WakeAlarmActivity */,
 				DD6CC8364C2A5EF73381A228 /* WakeTests */,
 				69B72CA93A241EBF3E829B8D /* WakeUITests */,
 			);
@@ -267,13 +395,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				639CA0330A1A428B17CE7423 /* Assets.xcassets in Resources */,
+				DCC4786D2309C46ABDC8AA35 /* BrightMarimba.m4a in Resources */,
+				FE1044845C303E921ED7ED4C /* BrightMarimbaAlarm.caf in Resources */,
+				224D8B0696F54AD5B4F80680 /* BrightMarimbaAlarmGentle.caf in Resources */,
 				2C304C21F861510A3DA07FC5 /* FirstLight.m4a in Resources */,
 				AF7380F1CFED2A0D90F00CB4 /* FirstLightAlarm.caf in Resources */,
+				8A5639F6FAC64FF98B396442 /* FirstLightAlarmGentle.caf in Resources */,
+				06DB8375F433886F4A8E6939 /* MorningGroove.m4a in Resources */,
+				1BB267B4FD4221C0D0B7E905 /* MorningGrooveAlarm.caf in Resources */,
+				859DF9E12547EF67A996D8A5 /* MorningGrooveAlarmGentle.caf in Resources */,
 				EAFF49A359420D028F2F173F /* PrivacyInfo.xcprivacy in Resources */,
+				34FD58361A85A03ED61C9B39 /* QuietKeys.m4a in Resources */,
+				ACB53018F0D1ED8CB2EC8AF0 /* QuietKeysAlarm.caf in Resources */,
+				2E268C9A6270BD90C6A35CC2 /* QuietKeysAlarmGentle.caf in Resources */,
 				22B04B7ED35E71AC6EC6EEB6 /* RiseAndShine.m4a in Resources */,
 				6270EA4454B62AD67E08F923 /* RiseAndShineAlarm.caf in Resources */,
+				F9830DDA35E0CB19376FBD2B /* RiseAndShineAlarmGentle.caf in Resources */,
 				B748940F64E01804C80505E7 /* SoftStart.m4a in Resources */,
 				7B8F3E90F33FFC308F29CD8F /* SoftStartAlarm.caf in Resources */,
+				7F39C8F58E175D2CCCD54E2A /* SoftStartAlarmGentle.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,19 +433,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				E05C7FCD36676B2774A704FF /* AlarmEditor.swift in Sources */,
+				BF5CFAEC900DAF7A41344BEA /* AlarmPlan.swift in Sources */,
 				F09E82D77542D7D8A18DAD58 /* AlarmService.swift in Sources */,
+				16874EE3C3AD5A5C700B82CE /* CodeScanner.swift in Sources */,
+				1161F83CEEB48229F3FAFC5A /* FocusMissions.swift in Sources */,
 				EA425ED5BCBA0673E166064A /* HomeView.swift in Sources */,
+				694909DB6D7711B8AAC3029F /* JournalShareSheet.swift in Sources */,
 				FDDFBF945493310F42401C57 /* JournalView.swift in Sources */,
 				0E5FAB0A848E0C34429E20DD /* Models.swift in Sources */,
 				77572A8DCD7A5F1577C09ABB /* MorningAudio.swift in Sources */,
+				503BA30714C82F8ABC09FDF4 /* MorningNotifications.swift in Sources */,
+				605FC215F8E45477F74411F8 /* MorningTools.swift in Sources */,
 				ED999769E6C741177E31C3DA /* MorningView.swift in Sources */,
 				6829CA20CB9B7F350400B2AB /* MovementSensor.swift in Sources */,
 				9C45EC351672C999F10723AA /* PlusView.swift in Sources */,
 				1A2B3FB7F27FC9A87C3A6E1F /* PurchaseStore.swift in Sources */,
+				EFA7CF561B2D8C29A8A3D190 /* RouteEditor.swift in Sources */,
 				09430B04F7F8337B494B5CDD /* RoutinesView.swift in Sources */,
 				6D22D7145C8D618B1657F629 /* SettingsView.swift in Sources */,
 				EBE076C4CBCD6C015B3FB677 /* Theme.swift in Sources */,
+				B15BA76F6D10F6B858B95E47 /* ToneLibrary.swift in Sources */,
 				D0D21C47AA7B3149B1539ACD /* WakeMeUpApp.swift in Sources */,
+				8B5B2B9E666ECB61379B2071 /* WakeMetadata.swift in Sources */,
+				4B2815C07C3545C1B63BA92B /* WakeShortcuts.swift in Sources */,
 				A573F3FC5110A6DDEBBF2382 /* WakeStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +465,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				53331C68C91B17D6ECA7F0A2 /* WakeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92DCD4B767A8BFD3CFBBC3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2784426F77A605930660CDEB /* WakeAlarmActivity.swift in Sources */,
+				0B8942B9664356260F2BEABA /* WakeMetadata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +493,11 @@
 			target = 638E424DE348CFB98222138A /* WakeMeUp */;
 			targetProxy = 0B3FAEDD804A492052C4BFC7 /* PBXContainerItemProxy */;
 		};
+		4F4C0DE7B63A7C0B701F1CAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B89FB55EC9AFF50B62FAF767 /* WakeAlarmActivity */;
+			targetProxy = BDE8A457794845A6E9AB6F11 /* PBXContainerItemProxy */;
+		};
 		B31BBCD332699D74A1AA08FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 638E424DE348CFB98222138A /* WakeMeUp */;
@@ -342,6 +506,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		102B3A0D72795BF22C667BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.wakemeup.activity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		1FE3601F7EB1D030FB5FC7C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -393,7 +575,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = HBD3XXQK45;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -407,7 +589,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,6 +597,24 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		403EB0B37510740D4B3877E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.wakemeup.activity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -520,7 +720,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = HBD3XXQK45;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -540,7 +740,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -586,6 +786,15 @@
 			buildConfigurations = (
 				F16995C3239D555A40D0DB5B /* Debug */,
 				1FE3601F7EB1D030FB5FC7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A121CAE5936CA863D9D6ECF5 /* Build configuration list for PBXNativeTarget "WakeAlarmActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				102B3A0D72795BF22C667BDA /* Debug */,
+				403EB0B37510740D4B3877E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

@@ -3,10 +3,31 @@
   "appName": "Wake Me Up: Move & Rise",
   "version": "1.0",
   "build": "1",
-  "status": "Waiting for Review",
+  "status": "Rejected",
   "submissionID": "b3e1440b-0593-4b3f-908e-c02bef5f698a",
   "submittedAtLocal": "2026-10-05 17:03",
   "timezone": "Europe/Bucharest",
   "reviewURL": "https://appstoreconnect.apple.com/apps/6819282141/distribution/reviewsubmissions/details/b3e1440b-0593-4b3f-908e-c02bef5f698a",
-  "reviewAttachment": "WakeMeUp-Reviewer-Demo.mp4"
+  "reviewAttachment": "WakeMeUp-Reviewer-Demo.mp4",
+  "rejectionObservedOn": "2026-10-06",
+  "rejectionGuidelines": [
+    "4.3 Spam",
+    "4.2.6 App Generation Services"
+  ],
+  "rejectionReasonSummary": "Apple described duplicate or insufficiently distinct functionality/content and requested answers to nine questions. Its message did not state that simultaneous submissions caused rejection.",
+  "revision": {
+    "build": "2",
+    "status": "Build 2 processed in TestFlight: Ready to Submit; not resubmitted for App Review",
+    "appReviewResponseSent": false,
+    "externalBetaFeedbackCollected": false,
+    "hardwareChecksComplete": false,
+    "uploadedOn": "2026-10-06",
+    "reviewAttachment": "WakeMeUp-Build2-Demo.mp4",
+    "listingDraftUpdated": true,
+    "reviewNotesUpdated": true,
+    "testFlightBuildID": "56a67188-9e0e-4489-bd4c-df5dfbba187a",
+    "testFlightURL": "https://appstoreconnect.apple.com/teams/54f57056-d9bb-4a38-aad1-31c9a6ba5707/apps/6819282141/testflight/ios/56a67188-9e0e-4489-bd4c-df5dfbba187a",
+    "selectedInVersionDraft": true,
+    "draftVersion": "1.0"
+  }
 }

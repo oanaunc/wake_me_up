@@ -1,0 +1,45 @@
+{
+  "file": "WakeMeUp-Build2-Demo.mp4",
+  "recordedOn": "2026-10-06",
+  "durationSeconds": 123.1,
+  "sizeBytes": 7614203,
+  "resolution": [
+    660,
+    1434
+  ],
+  "codec": "H.264",
+  "audio": false,
+  "captureTool": "xcrun simctl io recordVideo",
+  "playbackSpeed": 1,
+  "device": "Isolated iPhone 17 Pro Max simulator, iOS 26.5",
+  "segments": [
+    {
+      "sourceResult": "build/Build2ReviewerRoute.xcresult",
+      "result": "Passed",
+      "tests": [
+        "testMultiStepPracticeDoesNotCreateJournalCredit",
+        "testNewFeatureScreenshots"
+      ],
+      "sourceStartSeconds": 4,
+      "sourceEndSeconds": 81,
+      "shows": "Actual three-step practice route (sun taps, full 30-second stretch, self-reported light action), empty practice journal, quick-nap/time-off tools, bedside clock, route editor, maths and memory screens."
+    },
+    {
+      "sourceResult": "build/Build2ReviewerAlarm.xcresult",
+      "result": "Passed",
+      "test": "testNativeSnoozeAndWakeCheck",
+      "sourceStartSeconds": 18,
+      "sourceEndSeconds": 68.4,
+      "shows": "Native Snooze, a separately scheduled alarm opening sun taps, completed actual alarm ritual, real native follow-up and explicit three-tap awake confirmation.",
+      "alarmTiming": "New alarm schedules use a fifteen-second DEBUG override. Snooze is configured for three minutes; the recording does not wait for that countdown, and a new test alarm follows.",
+      "sound": "Simulator default system tone; no physical custom-sound evidence."
+    }
+  ],
+  "limitations": [
+    "Silent recording",
+    "No hardware camera/motion/custom-sound test",
+    "Cuts between the two recorded tests; retained segments play at original speed"
+  ],
+  "attachedToAppStoreConnect": true,
+  "attachmentDestination": "App Store Connect / 6819282141 / iOS version 1.0 / App Review Information"
+}

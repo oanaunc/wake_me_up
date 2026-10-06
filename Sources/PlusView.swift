@@ -40,7 +40,7 @@ struct PlusView: View {
                     Button("Restore purchases") { Task { await purchases.restore() } }.disabled(purchases.busy).frame(maxWidth: .infinity).font(.subheadline.bold())
                     if let message = purchases.message { Text(message).font(.subheadline).foregroundStyle(Dawn.muted).multilineTextAlignment(.center).frame(maxWidth:.infinity) }
                     HStack { Link("Privacy",destination:URL(string:"https://oanarinaldi.com/wakemeupprivacy.html")!); Spacer(); Link("Terms",destination:URL(string:"https://oanarinaldi.com/wakemeupterms.html")!); Spacer(); Link("Apple EULA",destination:URL(string:"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!) }.font(.caption)
-                    Text("Free: two alarms, all seven challenges, three ringtones, optional camera and motion counting, journal, and unlimited standard practice. No login or ads.").font(.caption).foregroundStyle(Dawn.muted)
+                    Text("Free: two alarms, all thirteen challenges, multi-step routes, flexible schedules, wake-up checks, sound import, optional camera and motion counting, journal, and unlimited standard practice. No login or ads.").font(.caption).foregroundStyle(Dawn.muted)
                 }.padding(24).frame(maxWidth:650).frame(maxWidth:.infinity)
             }.background(Dawn.cream).foregroundStyle(Dawn.ink).toolbar { ToolbarItem(placement:.confirmationAction) { Button("Done") { dismiss() } } }.manageSubscriptionsSheet(isPresented:$showManage)
         }.task { if purchases.products.isEmpty { await purchases.load() } }

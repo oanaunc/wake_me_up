@@ -1,0 +1,58 @@
+{
+  "build": "2",
+  "validatedOn": "2026-10-06",
+  "unitTests": {
+    "count": 21,
+    "result": "Passed",
+    "artifact": "build/ResearchVerifiedUnits.xcresult"
+  },
+  "phoneUI": {
+    "count": 9,
+    "result": "Passed",
+    "artifact": "build/ResearchFinalPhone.xcresult",
+    "note": "The full run had one failed audio-import unit test, which exposed Opus-in-M4A encoding. That production issue was corrected and all 21 unit tests passed in the separate final run."
+  },
+  "iPad": {
+    "unitCount": 21,
+    "uiCount": 9,
+    "integrationTestsSkipped": 3,
+    "result": "Passed",
+    "artifact": "build/ResearchVerifiedPad.xcresult"
+  },
+  "nativeAlarm": {
+    "count": 2,
+    "result": "Passed",
+    "artifact": "build/ResearchNative.xcresult",
+    "covers": [
+      "Background alarm opens actual route and saves sunrise",
+      "Native Snooze does not prematurely begin route",
+      "Completed route schedules a native follow-up, followed by explicit confirmation in the existing journal entry"
+    ],
+    "limits": "iOS 26.5 simulator with development certificate, 15-second debug schedules and default sound; not a hardware sound/camera/motion test."
+  },
+  "releaseArchive": "build/WakeMeUp-Build2-Release.xcarchive",
+  "signedIPA": "build/Build2ReleaseExport/WakeMeUp.ipa",
+  "archiveAndExport": "Succeeded; app and extension version 1.0 build 2 verified in both archive and IPA",
+  "website": {
+    "commit": "4851c2a",
+    "deploymentRun": "37443784528",
+    "result": "Succeeded",
+    "pagesHTTP": 200
+  },
+  "externalBetaFeedback": false,
+  "physicalChecksComplete": false,
+  "resubmittedForAppReview": false,
+  "packagingCorrection": "An initial upload attempt was rejected because the old Info.plist literal remained build 1. Both targets now bind CFBundleVersion to CURRENT_PROJECT_VERSION and CFBundleShortVersionString to MARKETING_VERSION. No duplicate new build was submitted.",
+  "upload": "Succeeded; processed and visible in TestFlight as Ready to Submit",
+  "reviewerRecording": {
+    "routeTests": 2,
+    "nativeTest": 1,
+    "result": "Passed",
+    "artifacts": [
+      "build/Build2ReviewerRoute.xcresult",
+      "build/Build2ReviewerAlarm.xcresult"
+    ],
+    "video": "AppStore/Review/WakeMeUp-Build2-Demo.mp4"
+  },
+  "testFlightBuildID": "56a67188-9e0e-4489-bd4c-df5dfbba187a"
+}

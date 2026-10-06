@@ -6,12 +6,13 @@ A native iPhone and iPad alarm app. **Bring the sun up, one small move at a time
 
 Wake Me Up turns a morning alarm into an achievable movement ritual. An original clay sun mascot, apricot and plum colors, generous typography, tactile cards, and short original music give it a warm identity. Inspired by the personal rituals in Pace Up and Daily Check, it rewards showing up rather than athletic performance.
 
-1. **Tonight:** create a local-time alarm, choose repeat days, a movement, and a target. Native AlarmKit handles system ringing on iOS/iPadOS 26.1 and later.
-2. **Morning:** open the alarm's movement action, then do push-ups with optional on-device camera counting, dance with optional motion sensing, or choose squats, marching, a gentle seated stretch, paced breathing, or a focus-tapping game. Manual counting is always available.
-3. **Sunrise:** the sun rises with progress. Completing an actual alarm adds a sunrise to the journal. Practice is unlimited and does not inflate streaks.
-4. **Journal:** a calendar of completed mornings, mood check-in, and real consecutive-day streaks. Records stay on the device.
-5. **Plus:** one entitlement, monthly and yearly plans; up to 20 alarms, adjustable challenge targets, and extended routines. Free includes two alarms, all seven challenges, tracking, camera counting, and practice. No ads. Proposed US pricing: $2.99/month or $19.99/year; live prices come from StoreKit.
-6. **Release:** test alarm delivery, camera counting, motion permission, interruption recovery, subscription purchase/restore, and iPad layouts; publish privacy/support/terms on oanarinaldi.com; upload a signed build and accurate screenshots; complete App Store Connect declarations and submit for review.
+1. **Tonight:** choose weekday repeats, a specific date, or a work/rest cycle. Skip one occurrence, change its time, add days off, or pause during time away. Ordinary weekly repeats use persistent AlarmKit schedules. Flexible plans save fourteen dates with a visible scheduled-through horizon and refill on app use or alarm interaction.
+2. **Morning route:** order up to five steps, save presets, and practice complete routes. The thirteen challenges include movement, breathing, sun taps, typed maths, memory trails, typed intentions, code-matched destinations, letting in light, and preparing a drink. Physical actions can use explicit self-report; camera and motion are optional estimates. Completed route steps are checkpointed for recovery.
+3. **Stay awake:** choose native snooze, or open your route immediately. An optional native follow-up alarm asks for three taps and explicit awake confirmation. Confirmation belongs to the existing sunrise; it never adds a second entry.
+4. **Sounds and rest:** six presets use excerpts of the three licensed original tracks. Bundled gentle ramps, changing sounds across mornings, non-DRM local audio import, and separate ritual volume are available. A quick nap has its own slot. Optional bedside clock, bedtime reminder, rest planning goal, and three Siri shortcuts support setup.
+5. **Journal:** actual completed mornings, step completion modes, mood, elapsed time including pauses, wake-up confirmation, and seven-day insights. Hide streaks or export a CSV to a destination you choose. Practice never creates credit. Data stays on device; local destinations, presets, unused imports and journal can be removed.
+6. **Plus:** monthly/yearly plans grant the same entitlement: up to twenty saved alarms, adjustable challenge targets and longer practice. Free includes two saved alarms plus one nap, all thirteen standard challenges, five-step routes, flexible schedules, sounds and import, follow-up checks, optional sensors, journal/export and unlimited standard practice. No app login, ads or tracking. Proposed US pricing remains $2.99/month or $19.99/year; StoreKit supplies actual regional prices.
+7. **Research:** public customer reviews and first-person discussions informed the revision. [Findings and source links](AppStore/Research/Findings.json) separate observed requests, anecdotal limitations and platform boundaries. Discovery research is not external beta feedback.
 
 ## Honest behavior
 
@@ -25,23 +26,27 @@ Open `WakeMeUp.xcodeproj` in Xcode 27. `project.yml` is the XcodeGen source. Run
 
 Bundle: `com.oanarinaldi.wakemeup`. Team: `HBD3XXQK45`.
 
-## Validation and release state — 5 October 2026
+## Validation and release state — 6 October 2026
 
-- Final iPhone suite: 7 unit tests and 4 feature UI tests passed (`build/PhoneFinal.xcresult`). The StoreKit and alarm integration tests run separately; the main scheme skips those two tests.
-- iPad: 7 unit tests and 4 feature UI tests passed (`build/PadFinal.xcresult`). Seven actual screenshots per device were uploaded to App Store Connect.
-- Subscription purchase and restore passed with Apple's local StoreKit configuration on iOS 27 (`build/StoreKit27.xcresult`).
-- Native background alarm → Start moving → eight sun taps → saved sunrise passed on iOS 26.5 (`build/AlarmCertificate.xcresult`). Simulator App Intents requires an Apple Development certificate: ad-hoc signing has no team identifier and causes linkd to reject intent metadata. The integration test uses the default system sound because the 26.5 simulator's ToneLibrary crashes on custom CAF audio.
-- Final device archive succeeded. Version 1.0, build 1 uploaded successfully to App Store Connect, app ID 6819282141.
-- The physical-device custom ringtone, camera counting, motion sensing, locked-screen and terminated-app checks remain required. The connected iPhone was locked.
-- Version 1.0 build 1 is attached to the App Store version. Apple prepopulated the review contact fields when the version was saved; the user should verify those before the final submission. Version 1.0, build 1 was submitted on 5 October 2026 at 17:03 Europe/Bucharest, and App Store Connect confirms Waiting for Review. Submission ID: b3e1440b-0593-4b3f-908e-c02bef5f698a. A working-app video is attached to App Review Information and its explanation is saved in the reviewer notes. The subscription group's equivalent monthly/yearly products also need to be aligned to the same service level before release; the browser drag control did not persist that arrangement.
+- Build 1 was submitted on 5 October and rejected under 4.3 / 4.2.6. Apple's message describes insufficiently distinct functionality/content; it does not attribute rejection to simultaneous submissions. [Submission record](AppStore/Submission.json) preserves the original ID.
+- Build 2 substantially expands the native application and uploaded successfully on 6 October (`build/research-release-upload.log`). TestFlight lists build 2 as Ready to Submit after processing. It has not been resubmitted. Genuine external TestFlight feedback has not been collected; automated tests must not be represented as beta feedback.
+- Final revision checks: twenty-one unit tests passed (`build/ResearchVerifiedUnits.xcresult`), and nine phone UI flows passed (`build/ResearchFinalPhone.xcresult`). That full phone run initially exposed one audio-import unit failure: officially downloaded tracks used Opus in MP4. The app copies were converted to AAC, then all twenty-one unit tests passed. Every built-in preview is decode-tested and imports are bounded to twenty-five seconds.
+- iPad: twenty-one unit tests and nine UI flows passed (`build/ResearchVerifiedPad.xcresult`); three separate integration tests were skipped in the standard scheme. Phone and iPad tests cover maths, memory, intentions, routes, navigation and fresh screenshots.
+- Signed iOS 26.5 native integration: background alarm, Snooze without prematurely opening a route, completion, real follow-up alarm, three-tap confirmation and journal passed (`build/ResearchNative.xcresult`). The debug integration schedules alarms after fifteen seconds and uses default system sound. This does not verify physical custom tones.
+- Build 1 subscription purchase/restore passed with Apple's local StoreKit configuration on iOS 27 (`build/StoreKit27.xcresult`); the underlying purchase implementation remains the same.
+- Final device archive and signed IPA export succeeded (`build/WakeMeUp-Build2-Release.xcarchive`, `build/Build2ReleaseExport/WakeMeUp.ipa`). Both app and extension plists were verified as version 1.0, build 2. An initial upload attempt used an old plist build-number literal and was rejected before acceptance; explicit build-setting bindings now prevent that mismatch.
+- Physical sound, locked-screen/terminated-app, barcode camera and movement sensing checks remain required. The connected iPhone still requires its passcode.
+- The equivalent monthly/yearly Plus products remain at different App Store Connect service levels (1 and 2). The native browser drag did not persist a same-level arrangement. Align them and include the first group/products in the eventual review draft before public release; the app itself grants identical Plus access for both.
 
-The privacy, support, and terms pages use the existing website header, shared stylesheet, photo banner, content layout, footer, and scripts. The website styling update was deployed successfully.
+The privacy, support, and terms pages use the existing website header, shared stylesheet, photo banner, content layout, footer, and scripts. The 6 October privacy, support and terms changes retain that styling and were deployed successfully (website commit 4851c2a, FTP run 37443784528).
 
 Public pages: [Privacy](https://oanarinaldi.com/wakemeupprivacy.html), [Support](https://oanarinaldi.com/wakemeupsupport.html), [Terms](https://oanarinaldi.com/wakemeupterms.html).
 
-### Reviewer video
+### Reviewer videos
 
-`AppStore/Review/WakeMeUp-Reviewer-Demo.mp4` is a 49.5-second silent H.264 simulator capture attached to App Store Connect. It shows alarm editing, guided push-up practice, a native background alarm opening Follow the sun, eight correct taps, and the saved journal. The tour is slowed to two-thirds speed; the native alarm segment runs at its recorded speed using the isolated 15-second debug test alarm and simulator default tone. It does not demonstrate physical camera/motion sensing. Both recorded UI flows passed (`build/ReviewerTour.xcresult`, `build/ReviewerAlarm.xcresult`).
+`AppStore/Review/WakeMeUp-Build2-Demo.mp4` is the updated silent simulator recording. It shows a complete three-step practice route, tools/bedside clock/route editing, focus screens, native Snooze, an actual alarm ritual, a native follow-up, explicit awake confirmation and actual journal. It preserves recorded playback timing with a cut between two test runs. Native test schedules are accelerated to fifteen seconds and use simulator default sound; the Snooze countdown is not awaited. The video does not demonstrate hardware sensors or custom tone playback. Both recorded runs passed (`build/Build2ReviewerRoute.xcresult`, `build/Build2ReviewerAlarm.xcresult`). `Build2Recording.json` records cuts and limitations.
+
+The earlier `AppStore/Review/WakeMeUp-Reviewer-Demo.mp4` and `Recording.json` remain as historical build 1 evidence. The updated 123.1-second recording is saved in App Review Information with revised reviewer notes; this does not itself resubmit the rejected version. The revised description, promotional text and keywords are saved as a listing draft, with build 2 selected. App Review status remains Rejected; Update Review has not been submitted.
 
 ### Separate integration checks
 

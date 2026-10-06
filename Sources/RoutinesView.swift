@@ -9,6 +9,15 @@ struct RoutinesView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
                     DawnHeading(eyebrow: "Movement menu", title: "Start small. Feel good.", subtitle: "Find your rhythm before the alarm rings. Practice never changes your sunrise streak.")
+                    VStack(alignment:.leading,spacing:14) {
+                        Text("Try a whole morning route").font(Dawn.title(24))
+                        Text("Focus, move, then prepare something for your day. Practice never adds journal credit.").font(.subheadline).foregroundStyle(Dawn.muted)
+                        DawnButton(title:"Sun taps → stretch → light",symbol:"point.topleft.down.to.point.bottomright.curvepath") {
+                            var alarm=WakeAlarm();alarm.route=[RitualStep(mission:.sunTaps),RitualStep(mission:.stretch),RitualStep(mission:.daylight)]
+                            store.begin(alarm,practice:true)
+                        }.accessibilityIdentifier("practice-whole-route")
+                        ForEach(store.presets) {preset in Button("Try \(preset.name)") {var alarm=WakeAlarm();alarm.route=preset.steps;store.begin(alarm,practice:true)}}
+                    }.dawnCard(Dawn.green)
                     ForEach(Mission.allCases) { mission in
                         VStack(alignment: .leading, spacing: 16) {
                             HStack { Image(systemName: mission.symbol).font(.system(size: 38)); Spacer(); Text("\(mission.defaultTarget) \(mission.unit)").font(.caption.bold()).padding(10).background(.white.opacity(0.7),in: Capsule()) }

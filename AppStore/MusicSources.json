@@ -3,12 +3,52 @@
   "service": "Suno",
   "model": "v6",
   "accountPlanAtCreation": "Premier, annual; confirmed in Suno account UI",
-  "downloadMethod": "Suno More options → Download → M4A → Unlock & Download, using existing monthly download allowance",
+  "downloadMethod": "Suno More options \u2192 Download \u2192 M4A \u2192 Unlock & Download, using existing monthly download allowance",
   "commercialRightsSource": "https://suno.com/terms",
   "rightsNotes": "All three selected tracks were generated from original text, with no uploads, voices, artist imitation, or remix source. They were downloaded through Suno's approved UI while Premier was active. Original downloaded M4A metadata is retained. Alarm CAF versions are incidental 25-second format conversions for use in the app.",
   "tracks": [
-    {"title": "Wake Me Up - First Light", "sourceURL": "https://suno.com/song/588c1814-53d7-45fc-b300-1e52bc98c609", "file": "Resources/FirstLight.m4a", "alarmFile": "Resources/FirstLightAlarm.caf", "prompt": "Instrumental sunrise nu-disco, 112 BPM, joyful warm marimba hook, muted funky guitar, round bass, light handclaps, crisp friendly four-on-the-floor beat. A bright playful morning dance ritual for Wake Me Up. Immediately audible melody from first second, no long intro, no vocals or spoken words, no sudden loud hits, polished soft dynamics, clean cheerful repeating sections, end with a short warm sparkling chime."},
-    {"title": "Wake Me Up - Soft Start", "sourceURL": "https://suno.com/song/5e883ef1-1efd-4b9f-8aec-ee1bc3161b9b", "file": "Resources/SoftStart.m4a", "alarmFile": "Resources/SoftStartAlarm.caf", "prompt": "Instrumental gentle sunrise music, 84 BPM, soft kalimba and warm felt piano, mellow brushed percussion, airy analog pads, subtle wooden shakers. A calm morning stretch for Wake Me Up. Melody begins immediately, no vocals or speech, no sudden transients, warm intimate acoustic production, soothing but hopeful, simple repeating phrases, 90 seconds, end with a delicate three-note chime."},
-    {"title": "Wake Me Up - Rise and Shine", "sourceURL": "https://suno.com/song/c6b86444-e736-4c78-8a06-c5fc7109180c", "file": "Resources/RiseAndShine.m4a", "alarmFile": "Resources/RiseAndShineAlarm.caf", "prompt": "Instrumental joyful morning funk-pop, 120 BPM, playful plucked synth melody, syncopated bass, bright piano chords, crisp soft claps and snare, warm analog synth sunshine. Wake Me Up upbeat dance ritual, cheerful energetic but never aggressive. Hook starts at the first second, clear consistent beat for movement, no vocals or speech, no sudden blasts, polished clean dynamics, short repeating sections, 90 seconds, happy three-note chime ending."}
-  ]
+    {
+      "title": "Wake Me Up - First Light",
+      "sourceURL": "https://suno.com/song/588c1814-53d7-45fc-b300-1e52bc98c609",
+      "file": "Resources/FirstLight.m4a",
+      "alarmFile": "Resources/FirstLightAlarm.caf",
+      "prompt": "Instrumental sunrise nu-disco, 112 BPM, joyful warm marimba hook, muted funky guitar, round bass, light handclaps, crisp friendly four-on-the-floor beat. A bright playful morning dance ritual for Wake Me Up. Immediately audible melody from first second, no long intro, no vocals or spoken words, no sudden loud hits, polished soft dynamics, clean cheerful repeating sections, end with a short warm sparkling chime."
+    },
+    {
+      "title": "Wake Me Up - Soft Start",
+      "sourceURL": "https://suno.com/song/5e883ef1-1efd-4b9f-8aec-ee1bc3161b9b",
+      "file": "Resources/SoftStart.m4a",
+      "alarmFile": "Resources/SoftStartAlarm.caf",
+      "prompt": "Instrumental gentle sunrise music, 84 BPM, soft kalimba and warm felt piano, mellow brushed percussion, airy analog pads, subtle wooden shakers. A calm morning stretch for Wake Me Up. Melody begins immediately, no vocals or speech, no sudden transients, warm intimate acoustic production, soothing but hopeful, simple repeating phrases, 90 seconds, end with a delicate three-note chime."
+    },
+    {
+      "title": "Wake Me Up - Rise and Shine",
+      "sourceURL": "https://suno.com/song/c6b86444-e736-4c78-8a06-c5fc7109180c",
+      "file": "Resources/RiseAndShine.m4a",
+      "alarmFile": "Resources/RiseAndShineAlarm.caf",
+      "prompt": "Instrumental joyful morning funk-pop, 120 BPM, playful plucked synth melody, syncopated bass, bright piano chords, crisp soft claps and snare, warm analog synth sunshine. Wake Me Up upbeat dance ritual, cheerful energetic but never aggressive. Hook starts at the first second, clear consistent beat for movement, no vocals or speech, no sudden blasts, polished clean dynamics, short repeating sections, 90 seconds, happy three-note chime ending."
+    }
+  ],
+  "additionalPresetClips": [
+    {
+      "name": "BrightMarimba",
+      "source": "FirstLight",
+      "startSeconds": 45,
+      "durationSeconds": 25
+    },
+    {
+      "name": "QuietKeys",
+      "source": "SoftStart",
+      "startSeconds": 35,
+      "durationSeconds": 25
+    },
+    {
+      "name": "MorningGroove",
+      "source": "RiseAndShine",
+      "startSeconds": 40,
+      "durationSeconds": 25
+    }
+  ],
+  "gentleVariants": "PCM CAF alarm copies use a fifteen-second fade-in and a two-second fade-out. Six presets are excerpts of the original three licensed tracks, not six independently generated works.",
+  "iOSPlaybackEncoding": "The three officially downloaded source tracks used Opus in MP4. Their bundled full-length copies were converted locally to AAC at 160 kbps for AVAudioPlayer compatibility on 6 October 2026. Alarm CAF clips use PCM; no new composition is claimed."
 }

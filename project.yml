@@ -7,13 +7,15 @@ settings:
   base:
     SWIFT_VERSION: '5.0'
     DEVELOPMENT_TEAM: HBD3XXQK45
-    MARKETING_VERSION: '1.0.0'
-    CURRENT_PROJECT_VERSION: '1'
+    MARKETING_VERSION: '1.0'
+    CURRENT_PROJECT_VERSION: '2'
 targets:
   WakeMeUp:
     type: application
     platform: iOS
     sources: [Sources, Resources]
+    dependencies:
+      - target: WakeAlarmActivity
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.oanarinaldi.wakemeup
@@ -24,14 +26,38 @@ targets:
       path: Info.plist
       properties:
         CFBundleDisplayName: Wake Me Up
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         UILaunchScreen: {}
         NSAlarmKitUsageDescription: Wake Me Up schedules your chosen morning alarms, including when the app is closed.
-        NSCameraUsageDescription: Optionally count push-ups on your device. Camera images are never recorded or uploaded.
+        NSCameraUsageDescription: Optionally count push-ups or scan destination codes on your device. Camera images are never recorded or uploaded.
+        NSSupportsLiveActivities: true
         NSMotionUsageDescription: Optionally measure movement during your dance ritual. Motion data stays on your device.
         ITSAppUsesNonExemptEncryption: false
         UIUserInterfaceStyle: Light
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
         UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+  WakeAlarmActivity:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Widgets
+      - Sources/WakeMetadata.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.oanarinaldi.wakemeup.activity
+        TARGETED_DEVICE_FAMILY: '1,2'
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+        CODE_SIGN_STYLE: Automatic
+    info:
+      path: Widgets/Info.plist
+      properties:
+        CFBundleDisplayName: Wake Me Up
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
   WakeTests:
     type: bundle.unit-test
     platform: iOS

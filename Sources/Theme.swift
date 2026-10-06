@@ -9,7 +9,7 @@ enum Dawn {
     static let lavender = Color(red: 0.89, green: 0.86, blue: 0.96)
     static let green = Color(red: 0.85, green: 0.91, blue: 0.81)
     static func title(_ size: CGFloat) -> Font { .system(size: size, weight: .bold, design: .rounded) }
-    static func tint(_ mission: Mission) -> Color { switch mission { case .pushups, .squats: peach; case .dance, .sunTaps: lavender; case .stretch, .march, .breathe: green } }
+    static func tint(_ mission: Mission) -> Color { switch mission { case .pushups, .squats: peach; case .dance,.sunTaps,.math,.memory,.words: lavender; case .stretch,.march,.breathe,.scanCode,.daylight,.water: green } }
 }
 
 struct DawnHeading: View {

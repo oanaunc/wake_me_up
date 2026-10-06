@@ -1,0 +1,56 @@
+{
+  "appID": "6819282141",
+  "build": "2",
+  "preparedOn": "2026-10-06",
+  "sentToApple": false,
+  "purpose": "Evidence checklist for answering the nine rejection questions after genuine beta testing. This is not a claim that feature additions guarantee acceptance.",
+  "questions": [
+    {
+      "number": 1,
+      "evidence": "AlarmKit native wake-ups lead into up to five explicit focus, movement and destination/action steps. Completed steps recover after interruption; native follow-up checks confirm the same journal entry. Source, tests and actual recordings document these behaviors."
+    },
+    {
+      "number": 2,
+      "evidence": "People who want a private, comfortable sequence for moving from alarm dismissal into their morning. Guided alternatives make the challenge menu usable without camera, motion permission or an athletic goal. No medical efficacy is claimed."
+    },
+    {
+      "number": 3,
+      "evidence": "Discovery repeatedly raised schedule exceptions, sound variety, transitions and staying awake. The revision combines local five-step routes, private code fingerprints, honest completion modes and local check-in history. These findings do not prove that no competitor has similar features."
+    },
+    {
+      "number": 4,
+      "evidence": "Automated checks have been performed. No genuine external beta feedback has yet been collected. TestFlight user observations and resulting changes must be documented before sending an answer that claims beta testing.",
+      "requiredBeforeResponse": true
+    },
+    {
+      "number": 5,
+      "evidence": "Intended as a standalone native alarm product, rather than a suite container. A precise comparison against every related published developer app must accompany the reply.",
+      "verificationNeeded": "Confirm the full published app list and app-specific distinctions."
+    },
+    {
+      "number": 6,
+      "evidence": "Core configuration, background native alarms, snooze, route recovery and follow-up checks belong to a daily wake-up workflow. Explain why this audience needs a standalone alarm rather than a workout or general daily-check feature; Apple decides whether that distinction is sufficient."
+    },
+    {
+      "number": 7,
+      "evidence": "The repository contains app-specific SwiftUI, AlarmKit, Vision, AVFoundation, CoreMotion, StoreKit and App Intents implementations.",
+      "verificationNeeded": "Complete a code and asset comparison against related apps before asserting that nothing significant is shared."
+    },
+    {
+      "number": 8,
+      "evidence": "No third-party application template, runtime dependency, advertising SDK, analytics SDK or developer backend is included. Apple frameworks handle native capabilities. App artwork was generated for this project; music sources and paid Suno licensing evidence are recorded separately. AI assistance was used to author source and artwork."
+    },
+    {
+      "number": 9,
+      "evidence": "The user requested an app for her own developer portfolio, repository and website, and it is prepared under Oana Rinaldi\u2019s developer team HBD3XXQK45. No client or third-party publisher was specified in the request."
+    }
+  ],
+  "remainingValidation": [
+    "Physical-device sound, Focus/Silent, Lock Screen and terminated-app checks",
+    "Camera destination matching and motion/camera estimation on hardware",
+    "Genuine external TestFlight feedback",
+    "Accurate comparison and ownership declarations for Apple\u2019s nine questions",
+    "Align equivalent monthly/yearly subscriptions at one App Store Connect service level and include the first group/products in the eventual review draft. The native browser drag did not save a new arrangement; current levels are 1 and 2."
+  ],
+  "resubmitted": false
+}

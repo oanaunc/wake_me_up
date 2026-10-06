@@ -1,0 +1,97 @@
+{
+  "researchedOn": "2026-10-06",
+  "method": "Qualitative review of publicly visible customer reviews and first-person discussions, followed by a separate review of official Apple API documentation. This is discovery evidence, not a representative survey or beta feedback.",
+  "sources": [
+    {
+      "url": "https://apps.apple.com/us/app/alarmy-loud-alarm-clock/id1163786766",
+      "kind": "App Store customer reviews",
+      "findings": [
+        "More sound choices, reliable closed-app alarms, and a small exercise routine are requested.",
+        "Users describe returning to bed after dismissal and becoming accustomed to one sound.",
+        "Affordability and access to basic challenges matter."
+      ],
+      "caveat": "Some reviews concern older versions and predate AlarmKit. Their technical claims were not treated as current iOS facts."
+    },
+    {
+      "url": "https://www.reddit.com/r/ios/comments/1iir0io/the_alarm_feature_is_the_worst_and_here_are_the/",
+      "kind": "First-person user discussion",
+      "findings": [
+        "Users request skipping individual occurrences or vacations without forgetting to restore the series.",
+        "Custom snooze duration and control over waking sounds recur."
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/ios/comments/y7tbqt/",
+      "kind": "First-person user request",
+      "findings": [
+        "A user with split sleep asks to skip one alarm, automatically retain future repeats, and manage naps separately."
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/ADHD/comments/1q928pf/morning_routines_feel_impossible_and_im_tired_of/",
+      "kind": "First-person user discussion",
+      "findings": [
+        "Users describe alarm dismissal, getting distracted, and difficulty starting the next action.",
+        "A destination away from the bed is a frequently described strategy."
+      ],
+      "caveat": "These experiences informed accessible product choices. They do not establish medical efficacy."
+    },
+    {
+      "url": "https://www.reddit.com/r/ADHD/comments/1rqbi4e/whats_everybodys_alarm_preferencesnooze_or_get_up/",
+      "kind": "First-person user discussion",
+      "findings": [
+        "Users want a real-world destination check and an easier transition from waking to getting up.",
+        "Preferences for snooze and gentle waking differ."
+      ],
+      "caveat": "NFC was mentioned by a user. Barcode/QR matching provides a destination option without requiring tags or an extra entitlement."
+    },
+    {
+      "url": "https://www.reddit.com/r/selfcare/comments/1mdw5xk/finally_found_an_app_that_got_me_waking_up_at_6am/",
+      "kind": "First-person user account",
+      "findings": [
+        "Small sequential tasks and visible progress are described as useful for maintaining morning momentum."
+      ],
+      "caveat": "Anecdotal report; not independently verified and not a clinical claim."
+    },
+    {
+      "url": "https://www.reddit.com/r/GetOutOfBed/comments/1og5kbw/tell_me_what_alarm_app_you_use_thats_not_alarmy/",
+      "kind": "Mixed user and developer discussion",
+      "findings": [
+        "Staying awake, more flexible repeats, and less intrusive interfaces recur."
+      ],
+      "caveat": "Self-promotional developer comments were not counted as independent customer demand."
+    }
+  ],
+  "implemented": [
+    "Morning routes of up to five ordered steps, reusable presets and whole-route practice",
+    "Six new challenges: typed maths, repeatable memory trails, typed intentions, matching barcode/QR destinations, self-reported light and drink actions",
+    "Optional wake-up check after route completion, with an actual native alarm and explicit confirmation",
+    "Native configurable snooze, countdown Live Activity and Dynamic Island presentation",
+    "Skip next, one-time next wake-up time, date-specific alarms, work/rest cycles, day-off exclusions and vacation pause",
+    "Visible next wake-ups and actual saved calendar-plan horizon",
+    "Fourteen scheduled dates for flexible plans, refilled on opening or interacting with an alarm",
+    "Separate quick-nap slot",
+    "Six sound presets derived from the three licensed original Suno tracks, rotating daily choices and bundled gentle ramps",
+    "Non-DRM local audio import and preview, with 25-second native alarm clips",
+    "Separate ritual music volume and mute controls",
+    "Optional bedside clock with app-only dim appearance",
+    "Optional local bedtime reminder and user-chosen rest planning goal",
+    "Alarm readiness checklist and real one-minute alarm test",
+    "Route checkpoints, recovery, completion modes and actual wake-check history",
+    "Seven-day local insights, hideable streak and CSV export",
+    "Siri / Shortcuts for quick naps, route practice and next wake-up",
+    "All standard challenges and routes free, with no app login, ads or tracking",
+    "Local deletion controls for destination fingerprints, reusable route presets, and unused imported audio"
+  ],
+  "platformBoundaries": [
+    "iOS retains system dismissal controls; no forced exercise, power-off prevention or guaranteed wake-up claim",
+    "Special calendar plans are finite; dates beyond the displayed scheduled-through horizon are not promised",
+    "Imported audio and custom alarm sound playback require real-device verification",
+    "No sleep-stage inference, medical treatment claim or sleep recording",
+    "No automatic Screen Time app blocking without Apple's Family Controls distribution authorization",
+    "No third-party song download or Apple Music DRM bypass",
+    "No partner-controlled alarms, cloud account system or unsolicited tester invitations",
+    "No new standalone Apple Watch app; AlarmKit's supported system mirroring remains an OS feature"
+  ],
+  "nextValidation": "Automated phone/iPad suites, signed native alarm and follow-up checks, hardware sound/camera/motion checks, and genuine external TestFlight feedback before an App Store response."
+}
