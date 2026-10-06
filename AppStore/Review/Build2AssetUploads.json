@@ -1,0 +1,53 @@
+{
+  "appID": "6819282141",
+  "build": "2",
+  "locale": "en-US",
+  "capturedFrom": "Actual revised app UI in dedicated iPhone and iPad simulators",
+  "uploadNames": {
+    "01-morning.png": "01-morning.png",
+    "02-route-editor.png": "12-route-editor.png",
+    "03-maths.png": "13-maths.png",
+    "04-memory.png": "14-memory.png",
+    "05-move.png": "03-move.png",
+    "06-challenge.png": "04-challenge.png",
+    "07-morning-tools.png": "10-morning-tools.png",
+    "08-bedside.png": "11-bedside.png",
+    "09-settings.png": "07-settings.png",
+    "10-sunrise.png": "05-sunrise.png"
+  },
+  "iPhone": {
+    "source": "AppStore/Screenshots/Build2/iPhone",
+    "dimensions": [
+      1320,
+      2868
+    ],
+    "slot": "iPhone with Dynamic Island (large display)",
+    "uploadedCount": 10,
+    "verified": true,
+    "smallerDisplayUsesInheritedAssets": true
+  },
+  "iPad": {
+    "source": "AppStore/Screenshots/Build2/iPad",
+    "dimensions": [
+      2064,
+      2752
+    ],
+    "slot": "iPad 13-inch display",
+    "uploadedCount": 10,
+    "verified": true
+  },
+  "reviewVideo": {
+    "file": "AppStore/Review/WakeMeUp-Build2-Demo.mp4",
+    "durationSeconds": 123.1,
+    "attached": true,
+    "publicAppPreview": false,
+    "attachedToResponse": true
+  },
+  "plusReviewScreenshot": {
+    "file": "AppStore/Review/Build2PlusReview.png",
+    "source": "Local StoreKit test in actual Build 2 app, iPhone 18 Pro Max simulator",
+    "resultBundle": "build/Build2PlusReviewVerified.xcresult",
+    "purchaseAndRestore": "passed",
+    "reviewMetadataPending": false
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "appID": "6819282141",
+  "groupID": "22442453",
+  "groupName": "Wake Me Up Plus",
+  "observedOn": "2026-10-06",
+  "sameEntitlement": "Up to 20 saved alarms, adjustable challenge targets and longer dance practice",
+  "free": "No app account; all 13 standard challenges and routes, two saved alarms and a separate quick nap",
+  "products": [
+    {
+      "productID": "com.oanarinaldi.wakemeup.plus.monthly",
+      "appleID": "6819287915",
+      "duration": "1 month",
+      "usPrice": "2.99 USD",
+      "observedServiceLevel": 1,
+      "status": "Ready for Review",
+      "availability": "All countries or regions selected"
+    },
+    {
+      "productID": "com.oanarinaldi.wakemeup.plus.yearly",
+      "appleID": "6819290498",
+      "duration": "1 year",
+      "usPrice": "19.99 USD",
+      "observedServiceLevel": 1,
+      "status": "Ready for Review",
+      "availability": "All countries or regions selected"
+    }
+  ],
+  "reviewImage": "AppStore/Review/Build2PlusReview.png",
+  "reviewNotesUpdated": true,
+  "sameServiceLevelConfirmed": true,
+  "localPurchaseAndRestoreTest": "passed",
+  "productionTransactionTested": false,
+  "addedToReviewDraft": true,
+  "groupStatus": "Ready for Review"
+}

@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-06",
+  "method": "SHA-256 exact Swift file comparison across local repositories, excluding generated/build/dependency folders. This detects exact copies only, not general patterns or semantic similarity.",
+  "wakeSwiftFiles": 26,
+  "repositories": [
+    {
+      "repository": "great_facts",
+      "swiftFilesCompared": 28,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "photo_editor",
+      "swiftFilesCompared": 513,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "draw_through",
+      "swiftFilesCompared": 9,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "AI_Fashion_Dress_me_up",
+      "swiftFilesCompared": 48,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "4d-game",
+      "swiftFilesCompared": 2,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "ai_architecture_render",
+      "swiftFilesCompared": 44,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "ai_beauty_makeover",
+      "swiftFilesCompared": 49,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "ai_architecture_plan",
+      "swiftFilesCompared": 53,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "turboracer",
+      "swiftFilesCompared": 27,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "ai_architecture_plan_to_video",
+      "swiftFilesCompared": 55,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "my_lists",
+      "swiftFilesCompared": 30,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "pace_up",
+      "swiftFilesCompared": 81,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "ai_plant_recognizer",
+      "swiftFilesCompared": 30,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "architecture_vision",
+      "swiftFilesCompared": 39,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "archi_tool",
+      "swiftFilesCompared": 751,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "ai_home_makeover",
+      "swiftFilesCompared": 40,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "GiggleBox",
+      "swiftFilesCompared": 30,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "daily_check_widget",
+      "swiftFilesCompared": 35,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "ai_coloring_pages",
+      "swiftFilesCompared": 14,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "ai_meal_tracker",
+      "swiftFilesCompared": 40,
+      "identicalSwiftFiles": []
+    },
+    {
+      "repository": "next_birthday",
+      "swiftFilesCompared": 45,
+      "identicalSwiftFiles": []
+    }
+  ],
+  "assetComparison": {
+    "method": "Exact SHA-256 comparison of Wake Resources PNG/JPG/CAF/M4A against equal-sized files in other local Git repositories; build/dependency folders excluded. Not a visual or musical similarity judgment.",
+    "wakeResourceFiles": 21,
+    "candidateFilesCompared": 0,
+    "identicalMatches": []
+  }
+}

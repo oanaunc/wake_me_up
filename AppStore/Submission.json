@@ -17,8 +17,8 @@
   "rejectionReasonSummary": "Apple described duplicate or insufficiently distinct functionality/content and requested answers to nine questions. Its message did not state that simultaneous submissions caused rejection.",
   "revision": {
     "build": "2",
-    "status": "Build 2 processed in TestFlight: Ready to Submit; not resubmitted for App Review",
-    "appReviewResponseSent": false,
+    "status": "Build 2 processed and selected in the revised listing draft; new screenshots, reviewer notes and video saved; all nine rejection questions answered to Apple with the video attached. Subscription group and both products Ready for Review at level 1. App version not resubmitted.",
+    "appReviewResponseSent": true,
     "externalBetaFeedbackCollected": false,
     "hardwareChecksComplete": false,
     "uploadedOn": "2026-10-06",
@@ -30,6 +30,16 @@
     "selectedInVersionDraft": true,
     "draftVersion": "1.0",
     "appStoreVersionStatus": "Prepare for Submission",
-    "originalReviewSubmissionStatus": "Rejected"
+    "originalReviewSubmissionStatus": "Rejected",
+    "reviewResponseFile": "AppStore/Review/ReviewerResponse.json",
+    "reviewResponseAttachment": "WakeMeUp-Build2-Demo.mp4",
+    "newScreenshotsUploaded": {
+      "iPhone": 10,
+      "iPad": 10,
+      "manifest": "AppStore/Review/Build2AssetUploads.json"
+    },
+    "subscriptionConfiguration": "AppStore/Review/SubscriptionConfiguration.json",
+    "subscriptionGroupAndProductsAddedToDraft": true,
+    "resubmitted": false
   }
 }

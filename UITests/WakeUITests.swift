@@ -71,7 +71,7 @@ final class WakeUITests: XCTestCase {
         session.resetToDefaultState(); session.disableDialogs=true; try session.clearTransactions()
         defer { withExtendedLifetime(session) {} }
         let app=app()
-        app.buttons["Settings"].firstMatch.tap(); app.buttons["Explore Plus"].tap()
+        app.buttons["Settings"].firstMatch.tap(); reveal(app.buttons["Explore Plus"],in:app); app.buttons["Explore Plus"].tap()
         let price=app.staticTexts["$19.99 / year"]
         for _ in 0..<4 { if price.isHittable { break }; app.swipeUp() }
         XCTAssertTrue(price.waitForExistence(timeout:15))

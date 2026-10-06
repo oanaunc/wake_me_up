@@ -54,5 +54,14 @@
     ],
     "video": "AppStore/Review/WakeMeUp-Build2-Demo.mp4"
   },
-  "testFlightBuildID": "56a67188-9e0e-4489-bd4c-df5dfbba187a"
+  "testFlightBuildID": "56a67188-9e0e-4489-bd4c-df5dfbba187a",
+  "revisedPlusValidation": {
+    "date": "2026-10-06",
+    "device": "Dedicated iPhone 18 Pro Max iOS 27 simulator",
+    "result": "passed",
+    "resultBundle": "build/Build2PlusReviewVerified.xcresult",
+    "test": "testSubscriptionPurchaseAndRestore",
+    "initialFailure": "Test navigation needed scrolling to reveal Explore Plus after new Settings controls. Test helper updated; no app behavior changed.",
+    "scope": "Local StoreKit purchase, entitlement and restore. Does not establish production product propagation or external beta feedback."
+  }
 }
