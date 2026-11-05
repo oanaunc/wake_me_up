@@ -25,5 +25,11 @@
     "releaseLint": "passed",
     "physicalDeviceTest": "not performed",
     "livePlayPurchaseTests": "pending Console products and key"
+  },
+  "website": {
+    "commit": "2ae880e",
+    "deployment": "success",
+    "run": "https://github.com/oanaunc/oanarina_website/actions/runs/42021624056",
+    "liveAndroidTextVerified": true
   }
 }
