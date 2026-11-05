@@ -1,0 +1,29 @@
+{
+  "updated": "2026-11-05",
+  "package": "com.oanarinaldi.wakemeup",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "status": "candidate-ready-console-certification-required",
+  "submitted": false,
+  "consoleAppCreated": false,
+  "consolePackageAvailabilityVerified": true,
+  "consoleCreationForm": "https://play.google.com/console/u/0/developers/8359156760975569195/create-new-app",
+  "pending": [
+    "User confirmation for Google Play compliance and US export certifications at app creation",
+    "Create Console app, read app-specific licensing public key and configure monthly/yearly Plus products",
+    "Rebuild signed submission artifact with licensing key",
+    "Upload app, store graphics/screenshots and required policy declarations",
+    "Google Play purchase lifecycle verification, review submission and visible confirmation"
+  ],
+  "physicalDeviceVerification": "Not performed; emulator validation is not a physical alarm, camera or motion pass.",
+  "pixelPerfectParity": "Not claimed: Apple proprietary fonts, SF Symbols and platform chrome use Android-compatible equivalents.",
+  "validation": {
+    "coreTests": 9,
+    "jvmTests": 8,
+    "phoneDeviceTests": 6,
+    "tabletScreenTest": 1,
+    "releaseLint": "passed",
+    "physicalDeviceTest": "not performed",
+    "livePlayPurchaseTests": "pending Console products and key"
+  }
+}

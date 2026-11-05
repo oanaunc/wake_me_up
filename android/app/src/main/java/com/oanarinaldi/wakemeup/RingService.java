@@ -1,0 +1,28 @@
+package com.oanarinaldi.wakemeup;
+import android.app.*;import android.content.*;import android.media.*;import android.os.*;import org.json.*;import java.io.*;import java.util.*;
+public class RingService extends Service {
+ MediaPlayer player;PowerManager.WakeLock lock;Vibrator vibrator;Handler handler=new Handler(Looper.getMainLooper());AudioManager audio;AudioFocusRequest focus;
+ public IBinder onBind(Intent i){return null;}
+ public int onStartCommand(Intent in,int flags,int startId){String id=in==null?null:in.getStringExtra("id");if(id==null){stopSelf();return START_NOT_STICKY;}AlarmScheduler.channels(this);releasePlayer();
+  Intent ring=new Intent(this,RingActivity.class).putExtra("id",id).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+  PendingIntent content=PendingIntent.getActivity(this,id.hashCode(),ring,PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);
+  Notification.Builder n=new Notification.Builder(this,"alarms").setSmallIcon(android.R.drawable.ic_lock_idle_alarm).setContentTitle(id.startsWith("check:")?"Still awake, sunshine?":"Hello, sunshine.").setContentText("Open your morning ritual").setCategory(Notification.CATEGORY_ALARM).setVisibility(Notification.VISIBILITY_PUBLIC).setOngoing(true).setContentIntent(content).setFullScreenIntent(content,true);
+  JSONObject a=WakeData.find(this,id);int minutes=a==null?0:a.optInt("snoozeMinutes");
+  n.addAction(new Notification.Action.Builder(null,"Stop",action(id,"stop")).build());if(minutes>0)n.addAction(new Notification.Action.Builder(null,"Snooze",action(id,"snooze")).build());
+  startForeground(100,n.build(),android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PLAYBACK);
+  if(lock==null){lock=getSystemService(PowerManager.class).newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,"wakemeup:alarm");lock.acquire(11*60*1000L);}
+  vibrator=getSystemService(Vibrator.class);if(vibrator!=null)vibrator.vibrate(VibrationEffect.createWaveform(new long[]{0,400,300,400,1500},0),new AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_ALARM).build());
+  play(a);handler.postDelayed(()->stopSelf(),10*60*1000L);return START_NOT_STICKY;
+ }
+ PendingIntent action(String id,String action){return PendingIntent.getBroadcast(this,action.hashCode(),new Intent(this,AlarmReceiver.class).setAction("ring:"+id+":"+action).putExtra("id",id).putExtra("action",action),PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);}
+ void play(JSONObject a){try{AudioAttributes attrs=new AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_ALARM).setContentType(AudioAttributes.CONTENT_TYPE_MUSIC).build();audio=getSystemService(AudioManager.class);focus=new AudioFocusRequest.Builder(AudioManager.AUDIOFOCUS_GAIN_TRANSIENT).setAudioAttributes(attrs).setOnAudioFocusChangeListener(change->{}).build();audio.requestAudioFocus(focus);
+   player=new MediaPlayer();player.setAudioAttributes(attrs);String tone=a==null?"FirstLight":a.optString("tone","FirstLight");if(tone.equals("Surprise"))tone=new String[]{"FirstLight","SoftStart","RiseAndShine","BrightMarimba","QuietKeys","MorningGroove"}[Math.floorMod(java.time.LocalDate.now().toEpochDay()+a.optString("id").hashCode(),6)];
+   if(tone.startsWith("custom_")){player.setDataSource(new File(getFilesDir(),tone).getAbsolutePath());}else{try(var fd=getAssets().openFd(tone+"Alarm.m4a")){player.setDataSource(fd.getFileDescriptor(),fd.getStartOffset(),fd.getLength());}}
+   player.setLooping(true);player.prepare();boolean gentle=a!=null&&a.optBoolean("gentleSound")&&!tone.startsWith("custom_");if(gentle)player.setVolume(.02f,.02f);player.start();if(gentle)for(int i=1;i<=15;i++){final float volume=i/15f;handler.postDelayed(()->{if(player!=null)player.setVolume(volume,volume);},i*1000L);}
+  }catch(Exception e){try{player=new MediaPlayer();player.setAudioAttributes(new AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_ALARM).build());player.setDataSource(this,RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM));player.setLooping(true);player.prepare();player.start();}catch(Exception ignored){}}
+ }
+ static void stop(Context c){c.stopService(new Intent(c,RingService.class));WakeData.pending(c,"");}
+ static void snooze(Context c,String id){JSONObject a=WakeData.find(c,id);int min=a==null?0:a.optInt("snoozeMinutes");stop(c);if(min>0){long at=System.currentTimeMillis()+min*60000L;c.getSharedPreferences("wake",0).edit().putLong("snooze:"+id,at).commit();AlarmScheduler.at(c,id,at);AlarmScheduler.channels(c);PendingIntent open=PendingIntent.getActivity(c,id.hashCode(),new Intent(c,MainActivity.class).putExtra("alarm",id),PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);PendingIntent cancel=PendingIntent.getBroadcast(c,id.hashCode(),new Intent(c,AlarmReceiver.class).setAction("cancel-snooze:"+id).putExtra("id",id).putExtra("action","cancelSnooze"),PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);c.getSystemService(NotificationManager.class).notify(id.hashCode(),new Notification.Builder(c,"snooze").setSmallIcon(android.R.drawable.ic_lock_idle_alarm).setContentTitle("A few more minutes").setContentText("Wake Me Up · your morning, your choice").setWhen(at).setUsesChronometer(true).setChronometerCountDown(true).setOngoing(true).setContentIntent(open).addAction(new Notification.Action.Builder(null,"Cancel snooze",cancel).build()).build());}}
+ void releasePlayer(){handler.removeCallbacksAndMessages(null);if(player!=null){player.release();player=null;}if(audio!=null&&focus!=null)audio.abandonAudioFocusRequest(focus);}
+ public void onDestroy(){releasePlayer();if(vibrator!=null)vibrator.cancel();if(lock!=null&&lock.isHeld())lock.release();super.onDestroy();}
+}

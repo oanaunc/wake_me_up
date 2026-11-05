@@ -1,0 +1,64 @@
+{
+  "art/sunrise.png": {
+    "source": "Resources/Assets.xcassets/SunriseLandscape.imageset/sunrise.png",
+    "sha256": "c30c072f0a3cbb149ab57e1e6eb58aadb5913b59fd8ac823a592754d61e20b9c"
+  },
+  "art/sun.png": {
+    "source": "Resources/Assets.xcassets/SunMascot.imageset/sun.png",
+    "sha256": "6081838be0fbf1d91710a8ea1c60826e1902178063eec9aeea22cd4b1c11dffb"
+  },
+  "BrightMarimba.m4a": {
+    "source": "Resources/BrightMarimba.m4a",
+    "sha256": "bf5f6071388ea59991ebd1a83245c846df9b3f68631b642ce21d281bfc12f03b"
+  },
+  "QuietKeys.m4a": {
+    "source": "Resources/QuietKeys.m4a",
+    "sha256": "5f6514fe7ea79334d03c2d38ea04279cab6b44ab78ef3522ba00ace5b99a35f3"
+  },
+  "SoftStart.m4a": {
+    "source": "Resources/SoftStart.m4a",
+    "sha256": "2beb2d60d5b898b62c61f594d0b89b0f4da8b1ed866fe811d7fa4728672fc151"
+  },
+  "RiseAndShine.m4a": {
+    "source": "Resources/RiseAndShine.m4a",
+    "sha256": "278abddcd203dda6e396184da87178c1eeb36ebcb08c00082fe1bde6628505e2"
+  },
+  "MorningGroove.m4a": {
+    "source": "Resources/MorningGroove.m4a",
+    "sha256": "f044280e8ac3bb5a275c986339894cc457c9c02bed9cb11ceddda231a95dcb9e"
+  },
+  "FirstLight.m4a": {
+    "source": "Resources/FirstLight.m4a",
+    "sha256": "a4535241b3c7fb3099de4da4f372ffd78928fe1ac7fd9b480c6812edf54da5bb"
+  },
+  "BrightMarimbaAlarm.m4a": {
+    "source": "Resources/BrightMarimbaAlarm.caf",
+    "conversion": "PCM CAF to AAC at 160 kbps",
+    "sha256": "73bdf1b7f89826257443781904119161c0e01ae6be1751f776a245a0fd6126df"
+  },
+  "SoftStartAlarm.m4a": {
+    "source": "Resources/SoftStartAlarm.caf",
+    "conversion": "PCM CAF to AAC at 160 kbps",
+    "sha256": "c3615bc3a6dea0879886833f7b1b5e26958d655a819abd2b81537e44c312ac2b"
+  },
+  "MorningGrooveAlarm.m4a": {
+    "source": "Resources/MorningGrooveAlarm.caf",
+    "conversion": "PCM CAF to AAC at 160 kbps",
+    "sha256": "0a1ddbb05534cbeba2053f81a3fda7c351330d7caf64a217446f2ab0baef08f7"
+  },
+  "QuietKeysAlarm.m4a": {
+    "source": "Resources/QuietKeysAlarm.caf",
+    "conversion": "PCM CAF to AAC at 160 kbps",
+    "sha256": "44804162633871be4178cb7bb0cbb889be9adac3a9da4ba72344f819c04b63a3"
+  },
+  "FirstLightAlarm.m4a": {
+    "source": "Resources/FirstLightAlarm.caf",
+    "conversion": "PCM CAF to AAC at 160 kbps",
+    "sha256": "31f3d40cb93603999363acbf1d02c2c74aa9a3e0a186613fdce3570073974661"
+  },
+  "RiseAndShineAlarm.m4a": {
+    "source": "Resources/RiseAndShineAlarm.caf",
+    "conversion": "PCM CAF to AAC at 160 kbps",
+    "sha256": "700d48159169c4bf8655ee19a004092cb49160b2d203665bc15bc9cb76392877"
+  }
+}

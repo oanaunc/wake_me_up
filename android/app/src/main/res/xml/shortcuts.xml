@@ -1,0 +1,5 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+ <shortcut android:shortcutId="morning" android:enabled="true" android:shortcutShortLabel="@string/morning"><intent android:action="android.intent.action.VIEW" android:targetPackage="com.oanarinaldi.wakemeup" android:targetClass="com.oanarinaldi.wakemeup.MainActivity"/></shortcut>
+ <shortcut android:shortcutId="practice" android:enabled="true" android:shortcutShortLabel="@string/practice"><intent android:action="android.intent.action.VIEW" android:targetPackage="com.oanarinaldi.wakemeup" android:targetClass="com.oanarinaldi.wakemeup.MainActivity"><extra android:name="shortcut" android:value="practice"/></intent></shortcut>
+ <shortcut android:shortcutId="nap" android:enabled="true" android:shortcutShortLabel="@string/nap"><intent android:action="android.intent.action.VIEW" android:targetPackage="com.oanarinaldi.wakemeup" android:targetClass="com.oanarinaldi.wakemeup.MainActivity"><extra android:name="shortcut" android:value="nap"/></intent></shortcut>
+</shortcuts>

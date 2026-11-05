@@ -1,0 +1,26 @@
+Wake Me Up turns a morning alarm into a short route from waking to doing something for your day. Choose up to five steps: a focus task, comfortable movement, and a destination or small real-world action.
+
+BUILD YOUR MORNING ROUTE
+Thirteen challenges include push-ups, squats, dance, marching, stretch, breathing, sun taps, typed maths, memory sequences, a typed intention, a barcode or QR destination, letting in light, and preparing a drink. Reorder steps, save reusable routes, or start with a gentle, focus, or joyful preset. Camera push-up and phone motion estimates are optional. Guided counting and comfortable alternatives remain available.
+
+MORE FLEXIBLE WAKE-UPS
+Choose weekday repeats, a specific date, or a work/rest cycle. Skip the next occurrence without turning off the series, or change only its time. Add days off, pause for time away, or set a separate quick nap. Android system alarms work while the app is closed.
+
+Android schedules the next occurrence and renews it when an alarm fires. Boot and timezone changes restore schedules. Keep the device powered on; force-stopping the app prevents alarms until you reopen it. Allow notifications and full-screen alarm display, and test the actual device before relying on an alarm.
+
+STAY WITH YOUR MORNING
+Enable an optional native wake-up check after completing a route. Confirm three sun taps or cancel it anytime. Choose system snooze duration, or turn snooze off and open the movement action. Android always retains system dismissal controls; the app cannot force exercise or guarantee that you wake.
+
+SOUNDS AND REST
+Six presets draw from three original instrumental tracks. Try changing sounds between mornings, a bundled gentle sound ramp, or local non-DRM audio import. Ritual music has its own volume and mute controls. An optional bedside clock, wind-down reminder, user-chosen rest goal, and app icon shortcuts make daily setup easier. Test sounds on your actual device before relying on them.
+
+YOUR OWN HISTORY
+Completed alarm routes add real sunrise entries, step details, optional mood, elapsed route time, and wake-up check confirmation. Practice earns no journal credit. See your last seven days, hide the consecutive-day streak, or export a CSV you choose where to share.
+
+FREE AND PLUS
+Free includes two saved alarms, one quick nap, every standard challenge, routes, core scheduling, wake-up checks, sounds, local journal, and standard practice. Plus offers up to twenty saved alarms, adjustable comfortable targets, and longer practice. Google Play displays regional monthly and yearly prices; restore purchases in Settings.
+
+No app login, advertising, analytics SDKs, or developer backend. Camera frames are processed on device and never recorded or uploaded. Destination codes use a saved one-way fingerprint. For Android 10 or later, on phones and tablets.
+
+Terms: https://oanarinaldi.com/wakemeupterms.html
+Privacy: https://oanarinaldi.com/wakemeupprivacy.html

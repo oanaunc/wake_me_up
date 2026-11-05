@@ -1,0 +1,21 @@
+{
+  "font": {
+    "name": "Nunito",
+    "source": "https://github.com/google/fonts/tree/main/ofl/nunito",
+    "license": "SIL Open Font License 1.1"
+  },
+  "barcode": {
+    "name": "ZXing 3.5.4",
+    "source": "https://github.com/zxing/zxing",
+    "license": "Apache-2.0"
+  },
+  "pose": {
+    "name": "MoveNet SinglePose Lightning float16 v4",
+    "source": "https://tfhub.dev/google/lite-model/movenet/singlepose/lightning/tflite/float16/4",
+    "modelCard": "https://storage.googleapis.com/movenet/MoveNet.SinglePose%20Model%20Card.pdf",
+    "license": "Apache-2.0",
+    "sha256": "0fac2226112d0371903ca86e3853cec24ef603a0b2f96f589b180f0ebdd135ab",
+    "runtime": "Bundled LiteRT Interpreter; no Play-services inference or model downloads"
+  },
+  "music": "See AppStore/MusicSources.json; identical Apple source tracks and alarm clips."
+}

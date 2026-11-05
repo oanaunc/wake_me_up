@@ -1,0 +1,12 @@
+{
+  "language": "en-US",
+  "title": "Wake Me Up: Move & Rise",
+  "shortDescription": "Alarm routes, gentle movement and little morning rituals. No login or ads.",
+  "category": "TOOLS",
+  "email": "oanaunciuleanu@gmail.com",
+  "website": "https://oanarinaldi.com",
+  "privacyPolicy": "https://oanarinaldi.com/wakemeupprivacy.html",
+  "packageName": "com.oanarinaldi.wakemeup",
+  "releaseNotes": "Bring the sun up, one small move at a time. Build a route from 13 challenges, set flexible alarms, choose original sounds, and keep a private sunrise journal.",
+  "reviewNotes": "No app login or reviewer account is required. All thirteen standard challenges, five-step routes, two saved alarms plus one quick nap, flexible schedules, sounds and import, optional local camera/motion estimates, journal/export and standard practice are free. Plus uses monthly/yearly Google Play subscriptions for 20 alarms, adjustable targets and longer practice. Allow notifications and full-screen alarm display in Alarm readiness. Test with the one-minute sound test under Morning tools. Alarms use AlarmManager.setAlarmClock and renew the next occurrence when triggered; boot/timezone changes restore schedules. Force-stopping the app or powering off prevents alarms. Stop and safe exits remain available. Guided physical actions are explicitly self-reported. Destination scans compare local SHA-256 digests; the payload is not retained. The app has no developer server, ads or analytics. Camera frames, pose inference, barcode decoding and acceleration estimates stay on the device. Practice never earns journal credit. Completed routes can schedule a follow-up alarm; three taps and explicit awake confirmation update the original journal entry. Emulator validation is documented separately; physical camera/motion/audio and real Play purchase lifecycle checks must not be represented as completed."
+}

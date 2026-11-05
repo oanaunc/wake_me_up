@@ -57,3 +57,11 @@ For `WakeAlarmIntegration`, build for testing, sign the simulator app with the e
 ### Device release check
 
 On an unlocked iPhone or iPad, set an alarm two minutes ahead and test each of First Light, Soft Start, and Rise & Shine on the Lock Screen. Repeat after force-closing the app, with Silent mode and Focus enabled. Confirm Stop and Start moving behave as disclosed and that a completed ritual adds exactly one journal entry. Deny and then enable Alarms in Settings. Try guided push-ups, optional camera counting from a side view, dance/march motion tracking, and the gentle alternative; background and resume a timed routine. Finally purchase and restore Plus in the sandbox and confirm the free limit returns after expiration.
+
+## Android / Google Play — 5 November 2026
+
+The Android port is under [`android/`](android/README.md), with the Apple artwork, complete challenge content, routes, flexible schedules, native alarms, original sounds, local import, journal, tools, optional sensors and Play Billing integration. [`GooglePlay/`](GooglePlay/submission-status.json) contains the listing assets, actual phone/tablet captures, parity/provenance records and honest submission state. The Apple app source remains unchanged.
+
+Development checks passed: nine JavaScript core checks, eight JVM checks, six phone device tests and one tablet screen test. Release lint and a signed minified candidate build passed; native libraries and APK packaging support 16 KB pages. These checks are development evidence, not external tester feedback or a physical-device sound/camera pass. Apple-specific fonts, symbols, pickers and system UI use Android equivalents.
+
+Google Play app creation is awaiting the user's compliance/export certification. The package name was confirmed available, but the Console app is not created or submitted. Plus products and the app-specific Play licensing public key must be configured before the final submission build and purchase lifecycle checks. Candidate outputs are deliberately marked and cannot unlock purchases with an unconfigured key.

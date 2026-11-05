@@ -6,3 +6,12 @@ xcuserdata/
 *.xcarchive
 *.ipa
 *.log
+android/.gradle/
+android/.idea/
+android/local.properties
+android/**/build/
+*.jks
+*.keystore
+*.aab
+*.apk
+output/

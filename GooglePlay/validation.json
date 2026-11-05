@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-05",
+  "core": {
+    "passed": 9
+  },
+  "jvm": {
+    "passed": 8
+  },
+  "phone": {
+    "passed": 6,
+    "targetedFinalRecheck": 2,
+    "api": 36
+  },
+  "tablet": {
+    "passedScreenTest": 1,
+    "resolution": "2560x1800",
+    "api": 36
+  },
+  "releaseLint": "passed",
+  "nativeELF16KB": [
+    "lib/arm64-v8a/libimage_processing_util_jni.so",
+    "lib/arm64-v8a/libsurface_util_jni.so",
+    "lib/arm64-v8a/libtensorflowlite_jni.so",
+    "lib/armeabi-v7a/libimage_processing_util_jni.so",
+    "lib/armeabi-v7a/libsurface_util_jni.so",
+    "lib/armeabi-v7a/libtensorflowlite_jni.so",
+    "lib/x86/libimage_processing_util_jni.so",
+    "lib/x86/libsurface_util_jni.so",
+    "lib/x86/libtensorflowlite_jni.so",
+    "lib/x86_64/libimage_processing_util_jni.so",
+    "lib/x86_64/libsurface_util_jni.so",
+    "lib/x86_64/libtensorflowlite_jni.so"
+  ],
+  "apkZipAlignment16KB": "passed",
+  "aabSHA256": "bdb582866cd5b7436e0024702122a8a4dc12c2402ed71e5bddf2458e3bd868c8",
+  "candidateOnly": true,
+  "notVerified": [
+    "Physical locked-screen/OEM/sound routing/camera/motion behavior",
+    "Live Google Play purchase lifecycle",
+    "Play review submission"
+  ]
+}
