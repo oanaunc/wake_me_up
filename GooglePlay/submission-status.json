@@ -3,13 +3,13 @@
   "package": "com.oanarinaldi.wakemeup",
   "versionName": "1.0",
   "versionCode": 1,
-  "status": "candidate-ready-console-certification-required",
+  "status": "blocked-by-google-weekly-app-creation-limit",
   "submitted": false,
   "consoleAppCreated": false,
   "consolePackageAvailabilityVerified": true,
   "consoleCreationForm": "https://play.google.com/console/u/0/developers/8359156760975569195/create-new-app",
   "pending": [
-    "User confirmation for Google Play compliance and US export certifications at app creation",
+    "Wait for Google Play weekly new-app creation quota to reset; retry creation using the prepared form",
     "Create Console app, read app-specific licensing public key and configure monthly/yearly Plus products",
     "Rebuild signed submission artifact with licensing key",
     "Upload app, store graphics/screenshots and required policy declarations",
@@ -31,5 +31,18 @@
     "deployment": "success",
     "run": "https://github.com/oanaunc/oanarina_website/actions/runs/42021624056",
     "liveAndroidTextVerified": true
+  },
+  "userCertificationConfirmation": {
+    "date": "2026-11-05",
+    "confirmedBothDeclarations": true,
+    "checkboxesSelected": true,
+    "createAttempted": true
+  },
+  "creationBlocker": {
+    "source": "Google Play Console create-app form",
+    "message": "Ai atins limita săptămânală pentru crearea de aplicații noi. Încearcă din nou săptămâna viitoare.",
+    "translation": "You have reached the weekly limit for creating new apps. Try again next week.",
+    "resetTime": "Not specified by Google in this message",
+    "evidence": "GooglePlay/weekly-creation-limit.jpg"
   }
 }
