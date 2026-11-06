@@ -1,30 +1,60 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "package": "com.oanarinaldi.wakemeup",
   "versionName": "1.0",
-  "versionCode": 1,
-  "status": "blocked-by-google-weekly-app-creation-limit",
+  "versionCode": 2,
+  "status": "production-staged-awaiting-iarc-agreement-and-rating",
   "submitted": false,
-  "consoleAppCreated": false,
-  "consolePackageAvailabilityVerified": true,
-  "consoleCreationForm": "https://play.google.com/console/u/0/developers/8359156760975569195/create-new-app",
+  "consoleAppCreated": true,
+  "consoleAppId": "4973065070220225662",
+  "consoleDashboard": "https://play.google.com/console/u/0/developers/8359156760975569195/app/4973065070220225662/app-dashboard",
+  "releasePreview": "https://play.google.com/console/u/0/developers/8359156760975569195/app/4973065070220225662/tracks/4697389803168780382/releases/1/review",
+  "bundle": {
+    "filename": "WakeMeUp-1.0-2.aab",
+    "sha256": "745ad6c6ea0234052c79793e5628e06990b68b2b268ec5fe91d6ddc5f10a5734",
+    "bytes": 31783855,
+    "playProcessed": true,
+    "billingPublicKeyConfigured": true,
+    "privateReviewerAccessInstructionsSaved": true
+  },
+  "storeListing": {
+    "language": "en-US",
+    "phoneScreenshots": 6,
+    "tabletScreenshots": 4,
+    "savedForReview": true,
+    "productionAvailability": "177 Google Play countries or regions and rest of world",
+    "intendedAudienceMinimumAge": 18
+  },
+  "subscriptions": {
+    "com.oanarinaldi.wakemeup.plus.monthly": {
+      "basePlan": "monthly-renewing",
+      "usPrice": "USD 2.99",
+      "active": true
+    },
+    "com.oanarinaldi.wakemeup.plus.yearly": {
+      "basePlan": "yearly-renewing",
+      "usPrice": "USD 19.99",
+      "active": true
+    }
+  },
+  "foregroundAlarmVideo": "https://drive.google.com/file/d/10rsTZnOZyg0_W12gxG859bPLfL5Xst_5/view?usp=drivesdk",
   "pending": [
-    "Wait for Google Play weekly new-app creation quota to reset; retry creation using the prepared form",
-    "Create Console app, read app-specific licensing public key and configure monthly/yearly Plus products",
-    "Rebuild signed submission artifact with licensing key",
-    "Upload app, store graphics/screenshots and required policy declarations",
-    "Google Play purchase lifecycle verification, review submission and visible confirmation"
+    "Obtain approval for the separate IARC terms and complete Play's content rating questionnaire",
+    "Send the staged production release and listing to Google Play for review and verify the submission status",
+    "Verify the live Play Billing purchase lifecycle on a configured Play test installation"
   ],
   "physicalDeviceVerification": "Not performed; emulator validation is not a physical alarm, camera or motion pass.",
   "pixelPerfectParity": "Not claimed: Apple proprietary fonts, SF Symbols and platform chrome use Android-compatible equivalents.",
   "validation": {
     "coreTests": 9,
-    "jvmTests": 8,
+    "jvmTests": 9,
     "phoneDeviceTests": 6,
     "tabletScreenTest": 1,
     "releaseLint": "passed",
     "physicalDeviceTest": "not performed",
-    "livePlayPurchaseTests": "pending Console products and key"
+    "livePlayPurchaseTests": "pending",
+    "android16KBZipAlignment": "passed",
+    "emulatorLockedScreenAlarmAudioAndStop": "passed"
   },
   "website": {
     "commit": "2ae880e",
@@ -38,11 +68,12 @@
     "checkboxesSelected": true,
     "createAttempted": true
   },
-  "creationBlocker": {
+  "previousCreationBlocker": {
     "source": "Google Play Console create-app form",
     "message": "Ai atins limita săptămânală pentru crearea de aplicații noi. Încearcă din nou săptămâna viitoare.",
     "translation": "You have reached the weekly limit for creating new apps. Try again next week.",
     "resetTime": "Not specified by Google in this message",
-    "evidence": "GooglePlay/weekly-creation-limit.jpg"
+    "evidence": "GooglePlay/weekly-creation-limit.jpg",
+    "resolved": "2026-11-06"
   }
 }
