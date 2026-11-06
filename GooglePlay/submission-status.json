@@ -3,12 +3,27 @@
   "package": "com.oanarinaldi.wakemeup",
   "versionName": "1.0",
   "versionCode": 2,
-  "status": "production-staged-awaiting-iarc-agreement-and-rating",
-  "submitted": false,
+  "status": "production-in-review",
+  "submitted": true,
   "consoleAppCreated": true,
   "consoleAppId": "4973065070220225662",
   "consoleDashboard": "https://play.google.com/console/u/0/developers/8359156760975569195/app/4973065070220225662/app-dashboard",
   "releasePreview": "https://play.google.com/console/u/0/developers/8359156760975569195/app/4973065070220225662/tracks/4697389803168780382/releases/1/review",
+  "submission": {
+    "id": 1,
+    "date": "2026-11-06",
+    "changes": 13,
+    "track": "production",
+    "playConsoleStatus": "Se examinează",
+    "details": "https://play.google.com/console/u/0/developers/8359156760975569195/app/4973065070220225662/publishing/submission-activity/1/details"
+  },
+  "contentRating": {
+    "iarcAgreementApprovedAndRecorded": "2026-11-06",
+    "questionnaireSaved": true,
+    "esrb": "Everyone",
+    "pegi": "3",
+    "inAppPurchasesDisclosed": true
+  },
   "bundle": {
     "filename": "WakeMeUp-1.0-2.aab",
     "sha256": "745ad6c6ea0234052c79793e5628e06990b68b2b268ec5fe91d6ddc5f10a5734",
@@ -39,8 +54,7 @@
   },
   "foregroundAlarmVideo": "https://drive.google.com/file/d/10rsTZnOZyg0_W12gxG859bPLfL5Xst_5/view?usp=drivesdk",
   "pending": [
-    "Obtain approval for the separate IARC terms and complete Play's content rating questionnaire",
-    "Send the staged production release and listing to Google Play for review and verify the submission status",
+    "Google Play production review decision",
     "Verify the live Play Billing purchase lifecycle on a configured Play test installation"
   ],
   "physicalDeviceVerification": "Not performed; emulator validation is not a physical alarm, camera or motion pass.",
