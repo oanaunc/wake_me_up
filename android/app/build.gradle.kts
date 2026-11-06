@@ -2,7 +2,16 @@ plugins { id("com.android.application") }
 android {
  namespace = "com.oanarinaldi.wakemeup"
  compileSdk = 36
- defaultConfig { applicationId = "com.oanarinaldi.wakemeup"; minSdk = 29; targetSdk = 36; versionCode = 1; versionName = "1.0"; testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"; buildConfigField("String", "PLAY_PUBLIC_KEY", "\"${providers.environmentVariable("WAKE_PLAY_PUBLIC_KEY").getOrElse("")}\"") }
+ defaultConfig {
+     applicationId = "com.oanarinaldi.wakemeup"
+     minSdk = 29
+     targetSdk = 36
+     versionCode = 2
+     versionName = "1.0"
+     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+     buildConfigField("String", "PLAY_PUBLIC_KEY", "\"${providers.environmentVariable("WAKE_PLAY_PUBLIC_KEY").getOrElse("")}\"")
+     buildConfigField("String", "REVIEW_ACCESS_DIGEST", "\"${providers.environmentVariable("WAKE_REVIEW_ACCESS_DIGEST").getOrElse("")}\"")
+ }
  buildFeatures { buildConfig = true }
  compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
  signingConfigs { providers.environmentVariable("WAKE_KEYSTORE").orNull?.let { create("upload") { storeFile = file(it); storePassword = providers.environmentVariable("WAKE_STORE_PASSWORD").get(); keyAlias = "upload"; keyPassword = providers.environmentVariable("WAKE_KEY_PASSWORD").get() } } }

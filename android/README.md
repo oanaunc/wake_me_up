@@ -29,7 +29,7 @@ These device tests clear the test app's local data. Never run them against a use
 
 `python3 android/scripts/create-upload-key.py` creates a private app-specific RSA upload key once, outside Git, under `~/.local/share/wake-me-up/android-upload/`. Preserve this folder securely for future app updates. `signing.json` contains `keystore`, `storePassword`, `keyPassword` and `alias`. Add the app-specific Google Play licensing public key as `playPublicKey` after the Console app is created. The key is public, but the signing secrets must stay private.
 
-`python3 android/scripts/build-release.py` runs JVM checks, release lint and minified signed APK/AAB builds. It refuses a submission build without the licensing key. `--candidate` explicitly produces preview artifacts with purchases disabled until the key and store products are configured. No debug or fake entitlement can unlock release Plus. The output report includes the package, version and SHA-256.
+`python3 android/scripts/build-release.py` runs JVM checks, release lint and minified signed APK/AAB builds. A submission build needs the licensing key and a random `reviewAccessCode` in the local signing configuration. Put the code in the private Play Console reviewer instructions. The app embeds only its digest and can unlock Plus controls for the review session. `--candidate` produces preview artifacts without reviewer access. Purchases require the licensing key and configured Play products. The output report includes the package, version and SHA-256.
 
 ## Android equivalents
 
@@ -43,6 +43,6 @@ These device tests clear the test app's local data. Never run them against a use
 
 ## Store preparation and limits
 
-Package `com.oanarinaldi.wakemeup`, version 1.0 (1), Android 10+ / target API 36. Free: two saved alarms plus one nap; all thirteen standard challenges; five-step routes; schedules; sounds/import; checks; journal/export and standard practice. Plus: twenty saved alarms, custom targets and longer practice. Monthly and yearly products provide the same entitlement and show actual Google Play regional prices.
+Package `com.oanarinaldi.wakemeup`, version 1.0 (2), Android 10+ / target API 36. Free: two saved alarms plus one nap; all thirteen standard challenges; five-step routes; schedules; sounds/import; checks; journal/export and standard practice. Plus: twenty saved alarms, custom targets and longer practice. Monthly and yearly products provide the same entitlement and show actual Google Play regional prices.
 
 [Play preparation state](../GooglePlay/submission-status.json) records what is done and pending. Do not describe candidate artifacts as submitted or approved. Real Google Play purchase lifecycle tests require this app's products, licensing key and test-track configuration. Emulator checks do not verify a physical phone's locked-screen sound routing, OEM restrictions, camera counting accuracy or movement sensing.

@@ -2,6 +2,7 @@ package com.oanarinaldi.wakemeup;
 import android.Manifest;import android.app.*;import android.content.*;import android.content.pm.PackageManager;import android.hardware.*;import android.media.*;import android.net.Uri;import android.os.*;import android.provider.*;import android.view.*;import android.webkit.*;import android.widget.Toast;import androidx.activity.ComponentActivity;import androidx.webkit.*;import androidx.core.content.FileProvider;import org.json.*;import java.io.*;import java.nio.charset.StandardCharsets;
 public class MainActivity extends ComponentActivity implements SensorEventListener {
  WebView web;PlayBilling billing;MediaPlayer music;SensorManager sensors;boolean loaded=false,motion=false;long lastMotion=0;String launch="",cameraPurpose="";Handler handler=new Handler(Looper.getMainLooper());
+ private volatile boolean reviewAccess;
  public void onCreate(Bundle b){super.onCreate(b);getWindow().setStatusBarColor(0xfffcf7ed);getWindow().setNavigationBarColor(0xfffcf7ed);getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR|View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);AlarmScheduler.channels(this);sensors=getSystemService(SensorManager.class);
   launch=getIntent().getStringExtra("alarm");if(launch==null||launch.isEmpty())launch=WakeData.pending(this);if(launch==null)launch="";if(!launch.isEmpty())AlarmScheduler.dismissSnooze(this,launch);
   billing=new PlayBilling(this);billing.changed=()->{if(loaded)event("billing",billingState());};
@@ -11,7 +12,8 @@ public class MainActivity extends ComponentActivity implements SensorEventListen
   android.widget.FrameLayout frame=new android.widget.FrameLayout(this);frame.setBackgroundColor(0xfffcf7ed);frame.addView(web,new android.widget.FrameLayout.LayoutParams(-1,-1));setContentView(frame);androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener(frame,(v,insets)->{androidx.core.graphics.Insets bars=insets.getInsets(androidx.core.view.WindowInsetsCompat.Type.systemBars()|androidx.core.view.WindowInsetsCompat.Type.ime());v.setPadding(bars.left,bars.top,bars.right,bars.bottom);return insets;});web.loadUrl("https://appassets.androidplatform.net/assets/index.html");
   getOnBackPressedDispatcher().addCallback(this,new androidx.activity.OnBackPressedCallback(true){public void handleOnBackPressed(){web.evaluateJavascript("window.appBack && appBack()",null);}});
  }
- JSONObject billingState(){JSONObject o=new JSONObject();WakeData.put(o,"active",billing.hasAccess());WakeData.put(o,"plans",billing.catalog());WakeData.put(o,"message",billing.message);WakeData.put(o,"busy",billing.purchasing||billing.loading);return o;}
+ boolean hasPlusAccess(){return reviewAccess||billing.hasAccess();}
+ JSONObject billingState(){JSONObject o=new JSONObject();WakeData.put(o,"active",hasPlusAccess());WakeData.put(o,"review",reviewAccess);WakeData.put(o,"reviewAvailable",!BuildConfig.REVIEW_ACCESS_DIGEST.isEmpty());WakeData.put(o,"plans",billing.catalog());WakeData.put(o,"message",billing.message);WakeData.put(o,"busy",billing.purchasing||billing.loading);return o;}
  void event(String type,Object value){runOnUiThread(()->{if(web!=null)web.evaluateJavascript("window.nativeEvent && nativeEvent("+JSONObject.quote(type)+","+(value instanceof String?JSONObject.quote((String)value):value.toString())+")",null);});}
  void openLink(String value){Uri u=Uri.parse(value);if(("https".equals(u.getScheme())&&("oanarinaldi.com".equals(u.getHost())||"play.google.com".equals(u.getHost())))||"mailto".equals(u.getScheme()))try{startActivity(new Intent(Intent.ACTION_VIEW,u));}catch(Exception e){toast("No app is available to open this link.");}}
  void toast(String x){runOnUiThread(()->Toast.makeText(this,x,Toast.LENGTH_LONG).show());}
@@ -19,9 +21,46 @@ public class MainActivity extends ComponentActivity implements SensorEventListen
  public void onResume(){super.onResume();if(web!=null){web.onResume();if(loaded){AlarmScheduler.refresh(this);event("resume",new JSONObject());billing.refresh();}}}
  public void onPause(){if(loaded)event("pause",new JSONObject());stopMotion();stopMusic();web.onPause();getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);super.onPause();}
  public void onDestroy(){stopMusic();stopMotion();billing.close();handler.removeCallbacksAndMessages(null);web.removeJavascriptInterface("Native");web.destroy();web=null;super.onDestroy();}
+ void showReviewAccess() {
+  if (BuildConfig.REVIEW_ACCESS_DIGEST.isEmpty()) return;
+  if (reviewAccess) {
+   new AlertDialog.Builder(this)
+     .setTitle("Play review access")
+     .setMessage("Review mode is active for this app session.")
+     .setPositiveButton("End review mode", (dialog, which) -> setReviewAccess(false))
+     .setNegativeButton("Keep reviewing", null)
+     .show();
+   return;
+  }
+  android.widget.EditText code = new android.widget.EditText(this);
+  code.setSingleLine(true);
+  code.setHint("Reviewer code");
+  code.setInputType(android.text.InputType.TYPE_CLASS_TEXT
+    | android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD);
+  code.setImportantForAutofill(View.IMPORTANT_FOR_AUTOFILL_NO);
+  new AlertDialog.Builder(this)
+    .setTitle("Play review access")
+    .setMessage("Enter the reviewer code to try Plus controls for this app session.")
+    .setView(code)
+    .setPositiveButton("Activate", (dialog, which) -> {
+     if (ReviewAccess.matches(code.getText().toString(), BuildConfig.REVIEW_ACCESS_DIGEST)) {
+      setReviewAccess(true);
+      toast("Play review mode is active.");
+     } else {
+      toast("That reviewer code is not valid.");
+     }
+    })
+    .setNegativeButton("Cancel", null)
+    .show();
+ }
+ void setReviewAccess(boolean active) {
+  reviewAccess = active;
+  event("reviewAccess", billingState());
+ }
  class Bridge {
+  @JavascriptInterface public void reviewAccess(){runOnUiThread(()->showReviewAccess());}
   @JavascriptInterface public String init(){JSONObject o=new JSONObject();WakeData.put(o,"state",WakeData.read(MainActivity.this));WakeData.put(o,"billing",billingState());WakeData.put(o,"alarm",launch);launch="";WakeData.put(o,"shortcut",getIntent().getStringExtra("shortcut"));return o.toString();}
-  @JavascriptInterface public synchronized String save(String value){try{JSONObject s=new JSONObject(value);JSONArray alarms=s.optJSONArray("alarms");if(alarms!=null){int count=0;for(int i=0;i<alarms.length();i++)if(!alarms.getJSONObject(i).optBoolean("isNap"))count++;if(count>(billing.hasAccess()?20:2)){JSONObject old=WakeData.read(MainActivity.this);if(count>(old.optJSONArray("alarms")==null?0:old.optJSONArray("alarms").length()))return "Explore Plus to save more than two alarms.";}}
+  @JavascriptInterface public synchronized String save(String value){try{JSONObject s=new JSONObject(value);JSONArray alarms=s.optJSONArray("alarms");if(alarms!=null){int count=0;for(int i=0;i<alarms.length();i++)if(!alarms.getJSONObject(i).optBoolean("isNap"))count++;if(count>(hasPlusAccess()?20:2)){JSONObject old=WakeData.read(MainActivity.this);if(count>(old.optJSONArray("alarms")==null?0:old.optJSONArray("alarms").length()))return "Explore Plus to save more than two alarms.";}}
     JSONObject old=WakeData.read(MainActivity.this);if(alarms!=null)for(int i=0;i<alarms.length();i++){JSONObject a=alarms.optJSONObject(i),prior=WakeData.find(MainActivity.this,a.optString("id"));if(prior!=null&&!prior.toString().equals(a.toString()))AlarmScheduler.dismissSnooze(MainActivity.this,a.optString("id"));}WakeData.write(MainActivity.this,s);try{AlarmScheduler.refresh(MainActivity.this);}catch(Exception e){WakeData.write(MainActivity.this,old);AlarmScheduler.refresh(MainActivity.this);throw e;}return "";
    }catch(Exception e){return "Your morning could not be saved: "+e.getMessage();}}
   @JavascriptInterface public void ensureNotifications(){runOnUiThread(()->{if(Build.VERSION.SDK_INT>=33&&checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS)!=PackageManager.PERMISSION_GRANTED)requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS},10);});}
